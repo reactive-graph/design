@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="6.8640041mm"
+   height="6.3292923mm"
+   viewBox="0 0 6.8640041 6.3292923"
    version="1.1"
    id="svg555"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
@@ -24,11 +24,11 @@
      inkscape:deskcolor="#505050"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="20.70196"
-     inkscape:cx="34.900078"
-     inkscape:cy="23.524343"
-     inkscape:window-width="2490"
-     inkscape:window-height="1371"
+     inkscape:zoom="14.638496"
+     inkscape:cx="47.306772"
+     inkscape:cy="30.945801"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
      inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
@@ -38,7 +38,8 @@
   <g
      inkscape:label="Ebene 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-2.909201,-3.1881725)">
     <path
        style="fill:#dc0073;stroke-width:0.0126747"
        d="m 4.122681,4.7347313 c -0.09481,-0.04112 -0.152187,-0.129035 -0.152187,-0.233204 0,-0.08454 0.02282,-0.135628 0.08603,-0.19267 0.05782,-0.05218 0.111258,-0.06711 0.207144,-0.0579 0.06995,0.0067 0.110359,0.03143 0.168148,0.102834 0.07306,0.09027 0.05752,0.250024 -0.03249,0.333982 -0.0691,0.06446 -0.189258,0.08485 -0.276643,0.04696 z"
