@@ -7,6 +7,48 @@
 }
 
 @font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 300;
+    src: url("FiraCode-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 400;
+    src: url("FiraCode-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 500;
+    src: url("FiraCode-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 600;
+    src: url("FiraCode-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fira Code";
+    font-style: normal;
+    font-weight: 700;
+    src: url("FiraCode-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Fira Code VF";
+    font-style: normal;
+    font-weight: 300 700;
+    src: url("FiraCode-VF.woff2") format("woff2-variations");
+}
+
+@font-face {
     font-family: "Metropolis Regular";
     font-style: normal;
     font-weight: 400;
