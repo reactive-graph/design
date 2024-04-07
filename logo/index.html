@@ -1,0 +1,52 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reactive Graph - Design System - Logo Animation Test</title>
+    <style>
+
+        @import "https://unpkg.com/open-props";
+        @import "css/palette.css";
+
+        .header {
+            text-align: center;
+        }
+        .rg-logo-container {
+            position: relative;
+            width: 400px;
+            text-align: center;
+        }
+
+        .rg-logo {
+            position: absolute;
+            width: 100%;
+        }
+
+        .rg-logo-outer-black {
+            opacity: 0.8;
+            animation: var(--animation-shake-x) infinite;
+        }
+
+        .rg-logo-inverse-selective-yellow {
+            opacity: 0.8;
+            animation: var(--animation-shake-y) infinite;
+        }
+
+        .rg-logo-inner-mexican-pink {
+            opacity: 0.8;
+            animation: var(--animation-shake-z) infinite;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h2>Reactive Graph - Design System</h2>
+        <h1>Logo Animation Test</h1>
+    </div>
+    <div class="rg-logo-container">
+        <img src="outer/reactive-graph-outer-black.svg" class="rg-logo-outer-black rg-logo" alt="Reactive Graph">
+        <img src="inverse/reactive-graph-inverse-selective-yellow.svg" class="rg-logo-inverse-selective-yellow rg-logo" alt="Reactive Graph">
+        <img src="inner/reactive-graph-inner-mexican-pink.svg" class="rg-logo-inner-mexican-pink rg-logo" alt="Reactive Graph">
+    </div>
+</body>
+</html>
