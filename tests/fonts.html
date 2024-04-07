@@ -29,32 +29,37 @@
             display: grid;
             width: 100%;
             height: 100%;
-            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
             grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
             justify-items: center;
         }
 
         .header {
             grid-row-start: 1;
-            grid-row-end: 3;
+            grid-row-end: 1;
             grid-column-start: 1;
             grid-column-end: 5;
             text-align: center;
         }
 
-        .thin {
+        .font-thin {
             grid-column-start: 1;
             grid-column-end: 1;
         }
 
-        .light {
+        .font-light {
             grid-column-start: 2;
             grid-column-end: 2;
         }
 
-        .regular {
+        .font-regular {
             grid-column-start: 3;
             grid-column-end: 3;
+        }
+
+        .font-black {
+            grid-column-start: 4;
+            grid-column-end: 4;
         }
 
         .size-1 {
@@ -99,6 +104,36 @@
             text-align: center;
             place-self: center;
         }
+
+        .roboto-black {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .metropolis-thin {
+            font-family: "Metropolis Thin", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .metropolis-light {
+            font-family: "Metropolis Light", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .metropolis-regular {
+            font-family: "Metropolis Regular", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .metropolis-black {
+            font-family: "Metropolis Black", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
     </style>
 </head>
 <body>
@@ -107,7 +142,7 @@
             <h2>Reactive Graph - Design System</h2>
             <h1>Fonts Test</h1>
         </div>
-        <div class="thin">
+        <div class="font-thin">
             <h1 class="size-1 roboto-thin">Roboto Thin</h1>
             <h2 class="size-2 roboto-thin">Roboto Thin</h2>
             <h3 class="size-3 roboto-thin">Roboto Thin</h3>
@@ -115,7 +150,7 @@
             <h5 class="size-5 roboto-thin">Roboto Thin</h5>
             <h6 class="size-6 roboto-thin">Roboto Thin</h6>
         </div>
-        <div class="light">
+        <div class="font-light">
             <h1 class="size-1 roboto-light">Roboto Light</h1>
             <h2 class="size-2 roboto-light">Roboto Light</h2>
             <h3 class="size-3 roboto-light">Roboto Light</h3>
@@ -123,13 +158,53 @@
             <h5 class="size-5 roboto-light">Roboto Light</h5>
             <h6 class="size-6 roboto-light">Roboto Light</h6>
         </div>
-        <div class="regular">
+        <div class="font-regular">
             <h1 class="size-1 roboto-regular">Roboto Regular</h1>
             <h2 class="size-2 roboto-regular">Roboto Regular</h2>
             <h3 class="size-3 roboto-regular">Roboto Regular</h3>
             <h4 class="size-4 roboto-regular">Roboto Regular</h4>
             <h5 class="size-5 roboto-regular">Roboto Regular</h5>
             <h6 class="size-6 roboto-regular">Roboto Regular</h6>
+        </div>
+        <div class="font-black">
+            <h1 class="size-1 roboto-black">Roboto Black</h1>
+            <h2 class="size-2 roboto-black">Roboto Black</h2>
+            <h3 class="size-3 roboto-black">Roboto Black</h3>
+            <h4 class="size-4 roboto-black">Roboto Black</h4>
+            <h5 class="size-5 roboto-black">Roboto Black</h5>
+            <h6 class="size-6 roboto-black">Roboto Black</h6>
+        </div>
+        <div class="font-thin">
+            <h1 class="size-1 metropolis-thin">Metropolis Thin</h1>
+            <h2 class="size-2 metropolis-thin">Metropolis Thin</h2>
+            <h3 class="size-3 metropolis-thin">Metropolis Thin</h3>
+            <h4 class="size-4 metropolis-thin">Metropolis Thin</h4>
+            <h5 class="size-5 metropolis-thin">Metropolis Thin</h5>
+            <h6 class="size-6 metropolis-thin">Metropolis Thin</h6>
+        </div>
+        <div class="font-light">
+            <h1 class="size-1 metropolis-light">Metropolis Light</h1>
+            <h2 class="size-2 metropolis-light">Metropolis Light</h2>
+            <h3 class="size-3 metropolis-light">Metropolis Light</h3>
+            <h4 class="size-4 metropolis-light">Metropolis Light</h4>
+            <h5 class="size-5 metropolis-light">Metropolis Light</h5>
+            <h6 class="size-6 metropolis-light">Metropolis Light</h6>
+        </div>
+        <div class="font-regular">
+            <h1 class="size-1 metropolis-regular">Metropolis Regular</h1>
+            <h2 class="size-2 metropolis-regular">Metropolis Regular</h2>
+            <h3 class="size-3 metropolis-regular">Metropolis Regular</h3>
+            <h4 class="size-4 metropolis-regular">Metropolis Regular</h4>
+            <h5 class="size-5 metropolis-regular">Metropolis Regular</h5>
+            <h6 class="size-6 metropolis-regular">Metropolis Regular</h6>
+        </div>
+        <div class="font-black">
+            <h1 class="size-1 metropolis-black">Metropolis Black</h1>
+            <h2 class="size-2 metropolis-black">Metropolis Black</h2>
+            <h3 class="size-3 metropolis-black">Metropolis Black</h3>
+            <h4 class="size-4 metropolis-black">Metropolis Black</h4>
+            <h5 class="size-5 metropolis-black">Metropolis Black</h5>
+            <h6 class="size-6 metropolis-black">Metropolis Black</h6>
         </div>
     </div>
 </body>
