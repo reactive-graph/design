@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reactive Graph - Design System - Fonts Test</title>
+    <style>
+
+        @import "https://unpkg.com/open-props";
+        @import "../css/palette.css";
+        @import "../fonts/fonts.css";
+
+        :root {
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        h1 {
+            font-family: "Roboto Black", sans-serif;
+            font-size: 30pt;
+        }
+
+        h2 {
+            font-family: "Roboto Thin", sans-serif;
+        }
+
+        h3 {
+            font-family: "Roboto Black", sans-serif;
+        }
+
+        .container {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+            justify-items: center;
+        }
+
+        .header {
+            grid-row-start: 1;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            text-align: center;
+        }
+
+        .thin {
+            grid-column-start: 1;
+            grid-column-end: 1;
+        }
+
+        .light {
+            grid-column-start: 2;
+            grid-column-end: 2;
+        }
+
+        .regular {
+            grid-column-start: 3;
+            grid-column-end: 3;
+        }
+
+        .size-1 {
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+
+        .size-2 {
+            grid-row-start: 3;
+            grid-row-end: 3;
+        }
+
+        .size-3 {
+            grid-row-start: 4;
+            grid-row-end: 4;
+        }
+
+        .size-4 {
+            grid-row-start: 5;
+            grid-row-end: 5;
+        }
+
+        .size-5 {
+            grid-row-start: 6;
+            grid-row-end: 6;
+        }
+
+        .roboto-thin {
+            font-family: "Roboto Thin", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .roboto-light {
+            font-family: "Roboto Light", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+
+        .roboto-regular {
+            font-family: "Roboto", sans-serif;
+            text-align: center;
+            place-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Reactive Graph - Design System</h2>
+            <h1>Fonts Test</h1>
+        </div>
+        <div class="thin">
+            <h1 class="size-1 roboto-thin">Roboto Thin</h1>
+            <h2 class="size-2 roboto-thin">Roboto Thin</h2>
+            <h3 class="size-3 roboto-thin">Roboto Thin</h3>
+            <h4 class="size-4 roboto-thin">Roboto Thin</h4>
+            <h5 class="size-5 roboto-thin">Roboto Thin</h5>
+            <h6 class="size-6 roboto-thin">Roboto Thin</h6>
+        </div>
+        <div class="light">
+            <h1 class="size-1 roboto-light">Roboto Light</h1>
+            <h2 class="size-2 roboto-light">Roboto Light</h2>
+            <h3 class="size-3 roboto-light">Roboto Light</h3>
+            <h4 class="size-4 roboto-light">Roboto Light</h4>
+            <h5 class="size-5 roboto-light">Roboto Light</h5>
+            <h6 class="size-6 roboto-light">Roboto Light</h6>
+        </div>
+        <div class="regular">
+            <h1 class="size-1 roboto-regular">Roboto Regular</h1>
+            <h2 class="size-2 roboto-regular">Roboto Regular</h2>
+            <h3 class="size-3 roboto-regular">Roboto Regular</h3>
+            <h4 class="size-4 roboto-regular">Roboto Regular</h4>
+            <h5 class="size-5 roboto-regular">Roboto Regular</h5>
+            <h6 class="size-6 roboto-regular">Roboto Regular</h6>
+        </div>
+    </div>
+</body>
+</html>
