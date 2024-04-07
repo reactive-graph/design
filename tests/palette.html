@@ -1,0 +1,144 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Reactive Graph - Design System - Logo Animation Test</title>
+    <style>
+
+        @import "https://unpkg.com/open-props";
+        @import "../css/palette.css";
+        @import "../fonts/fonts.css";
+
+        :root {
+            font-family: "Roboto Light", sans-serif;
+        }
+
+        h1 {
+            font-family: "Roboto Black", sans-serif;
+            font-size: 30pt;
+        }
+
+        h2 {
+            font-family: "Roboto Thin", sans-serif;
+        }
+
+        h3 {
+            font-family: "Roboto Black", sans-serif;
+        }
+
+        .container {
+            display: grid;
+            width: 100%;
+            height: 100%;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+            justify-items: center;
+        }
+
+        .header {
+            grid-row-start: 1;
+            grid-row-end: 1;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            text-align: center;
+        }
+
+        .rg-color-item {
+            /*place-self: center;*/
+            text-align: center;
+            /*align-self: center;*/
+            /*vertical-align: center;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        .rg-color-malachite {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            background-color: var(--malachite);
+        }
+
+        .rg-color-selective-yellow {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            background-color: var(--selective-yellow);
+        }
+
+        .rg-color-celestial-blue {
+            grid-row-start: 2;
+            grid-row-end: 2;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            background-color: var(--celestial-blue);
+        }
+
+        .rg-color-mexican-pink {
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            background-color: var(--mexican-pink);
+        }
+
+        .rg-color-chartreuse {
+            grid-row-start: 3;
+            grid-row-end: 3;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            background-color: var(--chartreuse);
+        }
+
+        .rg-color-black {
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 4;
+            grid-row-end: 4;
+            background-color: var(--black);
+            color: var(--white);
+        }
+
+        .rg-color-white {
+            grid-row-start: 4;
+            grid-row-end: 4;
+            grid-column-start: 2;
+            grid-column-end: 2;
+            background-color: var(--white);
+            color: var(--black);
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Reactive Graph - Design System</h2>
+            <h1>Palette Test</h1>
+        </div>
+        <div class="rg-color-item rg-color-malachite">
+            <h3>Malachite</h3>
+        </div>
+        <div class="rg-color-item rg-color-selective-yellow">
+            <h3>Selective Yellow</h3>
+        </div>
+        <div class="rg-color-item rg-color-celestial-blue">
+            <h3>Celestial Blue</h3>
+        </div>
+        <div class="rg-color-item rg-color-mexican-pink">
+            <h3>Mexican Pink</h3>
+        </div>
+        <div class="rg-color-item rg-color-chartreuse">
+            <h3>Chartreuse</h3>
+        </div>
+        <div class="rg-color-item rg-color-black">
+            <h3>Black</h3>
+        </div>
+        <div class="rg-color-item rg-color-white">
+            <h3>White</h3>
+        </div>
+    </div>
+</body>
+</html>
