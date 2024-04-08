@@ -1,0 +1,13 @@
+{
+  "name": "reactive-graph-design",
+  "private": true,
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.15"
+  },
+  "scripts": {
+    "fractal:start": "fractal start --sync",
+    "fractal:build": "fractal build"
+  }
+}
