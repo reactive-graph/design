@@ -4,7 +4,8 @@
   "version": "0.1.0",
   "license": "MIT",
   "dependencies": {
-    "@frctl/fractal": "^1.5.15"
+    "@frctl/fractal": "^1.5.15",
+    "json5": "^2.2.3"
   },
   "scripts": {
     "fractal:start": "fractal start --sync",

@@ -8,6 +8,9 @@ dependencies:
   '@frctl/fractal':
     specifier: ^1.5.15
     version: 1.5.15
+  json5:
+    specifier: ^2.2.3
+    version: 2.2.3
 
 packages:
 
@@ -2143,6 +2146,12 @@ packages:
 
   /json-buffer@3.0.0:
     resolution: {integrity: sha512-CuUqjv0FUZIdXkHPI8MezCnFCdaTAacej1TZYulLoAg1h/PhwkdXFN4V/gzY4g+fMBCOV2xF+rp7t2XD2ns/NQ==}
+    dev: false
+
+  /json5@2.2.3:
+    resolution: {integrity: sha512-XmOWe7eyHYH14cLdVPoyg+GOH3rYX++KpzrylJwSW98t3Nk+U8XOl8FWKOgwtzdb8lXGf6zYwDUzeHMWfxasyg==}
+    engines: {node: '>=6'}
+    hasBin: true
     dev: false
 
   /jsonfile@3.0.1:
