@@ -1,0 +1,45 @@
+{
+  "title": "Alert",
+  "status": "wip",
+  "variants": [
+    {
+      "name": "error",
+      "context": {
+        "title": "Error!",
+        "modifier": "error"
+      }
+    },
+    {
+      "name": "warning",
+      "context": {
+        "title": "Warning!",
+        "modifier": "warning"
+      }
+    },
+    {
+      "name": "success",
+      "context": {
+        "title": "Success!",
+        "modifier": "success"
+      }
+    },
+    {
+      "name": "info",
+      "context": {
+        "title": "Info!",
+        "modifier": "info"
+      }
+    },
+    {
+      "name": "default",
+      "context": {
+        "title": "Notice!",
+        "modifier": "notice"
+      }
+    }
+  ],
+  "context": {
+    "title": "Alert!",
+    "text": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum."
+  }
+}
