@@ -1,34 +1,47 @@
-# Reactive Graph Design
+<p align="center">
+  <a href="https://github.com/reactive-graph/reactive-graph"><img src="https://raw.githubusercontent.com/reactive-graph/.github/main/profile/images/reactive-graph-full-mexican-pink-black_512.png" alt="Reactive Graph"></a>
+</p>
 
-## Palette
+<h2 align="center">
+    <a href="https://design.reactive-graph.io/">design.reactive-graph.io</a>
+</h2>
 
-| No | Name             | R   | G   | B   | HEX                                            |
-|----|------------------|-----|-----|-----|------------------------------------------------|
-| 1  | malachite        | 4   | 231 | 98  | <span style="color:#04e762ff">#04e762ff</span> | 
-| 2  | selective-yellow | 245 | 183 | 0   | <span style="color:#f5b700ff">#f5b700ff</span> |
-| 3  | celestial-blue   | 0   | 161 | 228 | <span style="color:#00a1e4ff">#00a1e4ff</span> |
-| 4  | mexican-pink     | 220 | 0   | 115 | <span style="color:#dc0073ff">#dc0073ff</span> |
-| 5  | chartreuse       | 137 | 252 | 0   | <span style="color:#89fc00ff">#89fc00ff</span> |
+<p align="center">
+This repository contains the design system for the <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a>.
+</p>
 
-## Fonts
+<p align="center">
+  <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a> is a <b>reactive runtime</b> based on a <b>graph database</b>.
+</p>
 
-| Name                                    | Type            | License               | Description                                                                                                                                                                                                                                                                                                                                                                                                        |
-|-----------------------------------------|-----------------|-----------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Devicon](https://devicon.dev/)         | Icon Font       | MIT                   | Devicon aims to gather all logos representing development languages and tools.                                                                                                                                                                                                                                                                                                                                     |
-| [Fira Code](github.com/tonsky/FiraCode) | Monospace Font  | Open Font License 1.1 | Monospaced font with programming ligatures.                                                                                                                                                                                                                                                                                                                                                                        |
-| Metropolis                              | Sans Serif Font | Unlicense             | Metropolis is a modern, geometric typeface designed for optimal readability.                                                                                                                                                                                                                                                                                                                                       |
-| Roboto                                  | Regular Font    | Apache License 2.0    | Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types. |
-| Source Code Pro                         | Monospace Font  | Open Font License 1.1 | Source Code Pro is a set of OpenType fonts that have been designed to work well in user interface (UI) environments.                                                                                                                                                                                                                                                                                               |
+<h2 align="center">Design System</h2>
 
-## Logo
+<p align="center">
+  <a href="https://design.reactive-graph.io/docs/palette.html">Palette</a>
+</p>
 
-| Color            | Full                                                                                                | Outer                                                                                                 | Inner                                                                                                 | Inverse                                                                                                   |
-|------------------|-----------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------|
-| Black            | <img src="logo/full/reactive-graph-full-black.svg" style="width: 100px; height: 100px;">            | <img src="logo/outer/reactive-graph-outer-black.svg" style="width: 100px; height: 100px;">            | <img src="logo/inner/reactive-graph-inner-black.svg" style="width: 100px; height: 100px;">            | <img src="logo/inverse/reactive-graph-inverse-black.svg" style="width: 100px; height: 100px;">            |
-| White            | <img src="logo/full/reactive-graph-full-white.svg" style="width: 100px; height: 100px;">            | <img src="logo/outer/reactive-graph-outer-white.svg" style="width: 100px; height: 100px;">            | <img src="logo/inner/reactive-graph-inner-white.svg" style="width: 100px; height: 100px;">            | <img src="logo/inverse/reactive-graph-inverse-white.svg" style="width: 100px; height: 100px;">            |
-| Malachite        | <img src="logo/full/reactive-graph-full-malachite.svg" style="width: 100px; height: 100px;">        | <img src="logo/outer/reactive-graph-outer-malachite.svg" style="width: 100px; height: 100px;">        | <img src="logo/inner/reactive-graph-inner-malachite.svg" style="width: 100px; height: 100px;">        | <img src="logo/inverse/reactive-graph-inverse-malachite.svg" style="width: 100px; height: 100px;">        |
-| Selective Yellow | <img src="logo/full/reactive-graph-full-selective-yellow.svg" style="width: 100px; height: 100px;"> | <img src="logo/outer/reactive-graph-outer-selective-yellow.svg" style="width: 100px; height: 100px;"> | <img src="logo/inner/reactive-graph-inner-selective-yellow.svg" style="width: 100px; height: 100px;"> | <img src="logo/inverse/reactive-graph-inverse-selective-yellow.svg" style="width: 100px; height: 100px;"> |
-| Celestial Blue   | <img src="logo/full/reactive-graph-full-celestial-blue.svg" style="width: 100px; height: 100px;">   | <img src="logo/outer/reactive-graph-outer-celestial-blue.svg" style="width: 100px; height: 100px;">   | <img src="logo/inner/reactive-graph-inner-celestial-blue.svg" style="width: 100px; height: 100px;">   | <img src="logo/inverse/reactive-graph-inverse-celestial-blue.svg" style="width: 100px; height: 100px;">   |
-| Mexican Pink     | <img src="logo/full/reactive-graph-full-mexican-pink.svg" style="width: 100px; height: 100px;">     | <img src="logo/outer/reactive-graph-outer-mexican-pink.svg" style="width: 100px; height: 100px;">     | <img src="logo/inner/reactive-graph-inner-mexican-pink.svg" style="width: 100px; height: 100px;">     | <img src="logo/inverse/reactive-graph-inverse-mexican-pink.svg" style="width: 100px; height: 100px;">     |
-| Chartreuse       | <img src="logo/full/reactive-graph-full-chartreuse.svg" style="width: 100px; height: 100px;">       | <img src="logo/outer/reactive-graph-outer-chartreuse.svg" style="width: 100px; height: 100px;">       | <img src="logo/inner/reactive-graph-inner-chartreuse.svg" style="width: 100px; height: 100px;">       | <img src="logo/inverse/reactive-graph-inverse-chartreuse.svg" style="width: 100px; height: 100px;">       |
-| Black and White  | <img src="logo/full/reactive-graph-full-black-white.svg" style="width: 100px; height: 100px;">      |                                                                                                       |                                                                                                       |                                                                                                           |
+<p align="center">
+  <a href="https://design.reactive-graph.io/docs/logo.html">Logo</a>
+</p>
+
+<p align="center">
+  <a href="https://design.reactive-graph.io/docs/fonts.html">Fonts</a>
+</p>
+
+<h2 align="center">Affected pages</h2>
+
+<p align="center">
+  <a href="https://reactive-graph.io/">reactive-graph.io</a>
+</p>
+
+<p align="center">
+  <a href="https://docs.reactive-graph.io/">docs.reactive-graph.io</a>
+  <br>
+  Reference Documentation
+</p>
+
+<p align="center">
+  <a href="https://api.reactive-graph.io/">api.reactive-graph.io</a>
+  <br>
+  Rust API docs
+</p>
