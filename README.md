@@ -28,10 +28,16 @@ This repository contains the design system for the <a href="https://github.com/r
   <a href="https://design.reactive-graph.io/docs/fonts.html">Fonts</a>
 </p>
 
+<p align="center">
+  <a href="https://design.reactive-graph.io/">Components</a>
+</p>
+
 <h2 align="center">Affected pages</h2>
 
 <p align="center">
   <a href="https://reactive-graph.io/">reactive-graph.io</a>
+  <br>
+  Public Website
 </p>
 
 <p align="center">
@@ -44,4 +50,12 @@ This repository contains the design system for the <a href="https://github.com/r
   <a href="https://api.reactive-graph.io/">api.reactive-graph.io</a>
   <br>
   Rust API docs
+</p>
+
+<h2 align="center">Affected applications</h2>
+
+<p align="center">
+  <a href="https://github.com/reactive-graph/flow-editor">Flow Editor</a>
+  <br>
+  Graphical editor for creating and editing flows
 </p>
