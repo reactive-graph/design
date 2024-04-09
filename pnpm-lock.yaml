@@ -12,6 +12,11 @@ dependencies:
     specifier: ^2.2.3
     version: 2.2.3
 
+devDependencies:
+  fractal-cli:
+    specifier: ^0.0.2
+    version: 0.0.2
+
 packages:
 
   /@allmarkedup/fang@2.0.0:
@@ -1481,6 +1486,10 @@ packages:
     resolution: {integrity: sha512-buRG0fpBtRHSTCOASe6hD258tEubFoRLb4ZNA6NxMVHNw2gOcwHo9wyablzMzOA5z9xA9L1KNjk/Nt6MT9aYow==}
     engines: {node: '>= 0.6'}
     dev: false
+
+  /fractal-cli@0.0.2:
+    resolution: {integrity: sha512-RRCBOhmE1xMy1haC+opTGwoex7z+ngBsRLA7V3j/y2J3Eu1SQL8GIaBVgcsNI9ggliFpWQWmtOfBDyHtmNFcRw==}
+    dev: true
 
   /fragment-cache@0.2.1:
     resolution: {integrity: sha512-GMBAbW9antB8iZRHLoGw0b3HANt57diZYFO/HL1JGIC1MjKrdmhxvrJbupnVvpys0zsz7yBApXdQyfepKly2kA==}
