@@ -12,23 +12,20 @@
     <link rel="stylesheet" href="{{ path '/fonts/fonts.css' }}">
     <title>Preview</title>
     <style>
-        body {
-            display: grid;
-            place-content: center;
-        }
         main {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: flex-start;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            place-content: center;
             justify-content: space-around;
-            max-inline-size: calc(var(--size-content-1) * 4);
-            gap: var(--size-5);
-            padding: var(--size-5);
+            gap: var(--size-3);
+            padding: var(--size-3);
         }
     </style>
 </head>
 <body>
     <main>
+        {{{ yield }}}
+        {{{ yield }}}
         {{{ yield }}}
     </main>
 </body>
