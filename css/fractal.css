@@ -17,6 +17,10 @@ button.Header-button {
     }
 }
 
+.Frame-inner {
+    background-color: var(--surface-1);
+}
+
 .Frame-panel--main.is-loading {
     background-color: var(--surface-2);
 }
@@ -88,4 +92,53 @@ a.Pen-previewLink {
 
 .Code pre {
     font-family: var(--font-code);
+}
+
+.Document {
+    background: var(--surface-1);
+}
+
+.Document-title {
+    max-inline-size: unset;
+}
+
+.Prose {
+    font-size: unset;
+    line-height: unset;
+    max-width: unset;
+    width: unset;
+    font-feature-settings: unset;
+
+    & table {
+        /*width: unset;*/
+        margin: unset;
+        border-collapse: unset;
+        font-size: unset;
+        font-feature-settings: unset;
+        color: var(--text-2);
+    }
+
+    & h1,
+    & h2,
+    & h3,
+    & h4,
+    & h5,
+    & h6 {
+        color: var(--text-1);
+    }
+
+    & p {
+        color: var(--text-2);
+    }
+
+    & th {
+        background-color: unset;
+        border-bottom: unset;
+    }
+
+    & td {
+        text-align: unset;
+    }
+
+
 }
