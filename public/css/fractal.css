@@ -17,6 +17,10 @@ button.Header-button {
     }
 }
 
+.Frame-inner {
+    background-color: var(--surface-1);
+}
+
 .Frame-panel--main.is-loading {
     background-color: var(--surface-2);
 }
@@ -106,11 +110,12 @@ a.Pen-previewLink {
     font-feature-settings: unset;
 
     & table {
-        width: unset;
+        /*width: unset;*/
         margin: unset;
         border-collapse: unset;
         font-size: unset;
         font-feature-settings: unset;
+        color: var(--text-2);
     }
 
     & h1,
@@ -125,4 +130,15 @@ a.Pen-previewLink {
     & p {
         color: var(--text-2);
     }
+
+    & th {
+        background-color: unset;
+        border-bottom: unset;
+    }
+
+    & td {
+        text-align: unset;
+    }
+
+
 }
