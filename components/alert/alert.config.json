@@ -1,6 +1,6 @@
 {
   "title": "Alert",
-  "status": "wip",
+  "status": "ready",
   "variants": [
     {
       "name": "error",
