@@ -1,13 +1,12 @@
 lockfileVersion: '6.0'
 
-settings:
-  autoInstallPeers: true
-  excludeLinksFromLockfile: false
-
 dependencies:
   '@frctl/fractal':
     specifier: ^1.5.15
     version: 1.5.15
+  '@frctl/mandelbrot':
+    specifier: ^1.10.3
+    version: 1.10.3(@frctl/fractal@1.5.15)
   json5:
     specifier: ^2.2.3
     version: 2.2.3
@@ -3872,3 +3871,7 @@ packages:
       y18n: 5.0.8
       yargs-parser: 21.1.1
     dev: false
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
