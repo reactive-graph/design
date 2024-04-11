@@ -54,6 +54,10 @@ body {
     line-height: var(--font-lineheight-4);
 }
 
+a {
+    color: var(--celestial-blue);
+}
+
 h1 {
     color: var(--brand);
 }
