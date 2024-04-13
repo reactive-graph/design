@@ -10,40 +10,27 @@ context:
 
 ## Component preview links:
 
-{{#componentList}}
-<a href="{{path '/components/preview/{{ this.handle }}' }}">{{ this.title }}</a>
-{{/componentList}}
+<img src="{{ path '/logo/full/reactive-graph-full-mexican-pink.svg' }}" style="height: 240px;" alt="Reactive Graph">
 
 
 This is your index page. You can edit its contents at `docs/01-index.md`
 
-## Test
-{{ _self.title }}
+## Card component
 
-## TODO
-
-{{#each items}}
-* {{ this }}
-  {{/each}}
-
-## Button component
-
-The button component can be included within other components like this:
+The card component can be included within other components like this:
 
 ```
-\{{> @button }}
+\{{> @card }}
 ```
 
 This template for this component looks like this:
 
 ```
-{{view '@button'}}
+{{view '@card'}}
 ```
 
 and it therefore expects a set of data to render it that is in the following format:
 
 ```
-{{context '@button'}}
+{{context '@card'}}
 ```
-
-test 2
