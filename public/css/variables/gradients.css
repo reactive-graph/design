@@ -1,0 +1,45 @@
+:root {
+  --linear-gradient-1: linear-gradient(
+    90deg,
+    var(--malachite) 0%,
+    var(--selective-yellow-1--adaptive) 35%,
+    var(--malachite-3--adaptive) 100%
+  );
+
+  --striped-gradient-1: repeating-linear-gradient(
+    45deg,
+    var(--malachite),
+    var(--malachite-2--adaptive) var(--size-3),
+    var(--malachite-7--adaptive) var(--size-6),
+    var(--selective-yellow) var(--size-3),
+    var(--selective-yellow-2--adaptive) var(--size-6),
+    var(--selective-yellow-7--adaptive) var(--size-9)
+  );
+
+  --striped-gradient-2: repeating-linear-gradient(
+    45deg,
+    var(--mexican-pink),
+    var(--mexican-pink) var(--size-6),
+    var(--celestial-blue) var(--size-6),
+    var(--celestial-blue) var(--size-9)
+  );
+
+  --striped-gradient-3: repeating-linear-gradient(
+    45deg,
+    var(--celestial-blue),
+    var(--malachite-3--adaptive) var(--size-3),
+    var(--malachite-3) var(--size-6),
+    var(--celestial-blue-3) var(--size-6),
+    var(--mexican-pink-3--adaptive) var(--size-9),
+    var(--mexican-pink-7--adaptive) var(--size-9)
+  );
+
+  --striped-gradient-4: repeating-linear-gradient(
+    135deg,
+    var(--mexican-pink-3--adaptive) var(--size-2),
+    var(--mexican-pink-3) var(--size-4),
+    var(--mexican-pink-3--adaptive) var(--size-6),
+    var(--selective-yellow-3--adaptive) var(--size-8),
+    var(--selective-yellow-7--adaptive) var(--size-10)
+  );
+}
