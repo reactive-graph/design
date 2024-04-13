@@ -1,5 +1,6 @@
 ---
 title: Fonts
+status: beta
 ---
 
 | Name                                    | Type            | License               | Description                                                                                                                                                                                                                                                                                                                                                                                                        |

@@ -1,5 +1,6 @@
 ---
 title: Palette
+status: stable
 ---
 
 | No | Name             | R   | G   | B   | HEX                                            |

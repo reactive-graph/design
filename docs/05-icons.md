@@ -1,5 +1,6 @@
 ---
 title: Icons
+status: beta
 ---
 
 | Name                                    | License | Description                                                                                                     |

@@ -1,5 +1,6 @@
 ---
 title: Logo
+status: stable
 ---
 
 | Color            | Full                                                                                                              | Outer                                                                                                                  | Inner                                                                                                               | Inverse                                                                                                                 |
