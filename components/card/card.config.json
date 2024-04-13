@@ -1,7 +1,46 @@
 {
   "title": "Card",
-  "status": "wip",
+  "status": "prototype",
+  "variants": [
+    {
+      "name": "mexican-pink",
+      "context": {
+        "surface": "mexican-pink"
+      }
+    },
+    {
+      "name": "celestial-blue",
+      "context": {
+        "surface": "celestial-blue"
+      }
+    },
+    {
+      "name": "selective-yellow",
+      "context": {
+        "surface": "selective-yellow"
+      }
+    },
+    {
+      "name": "malachite",
+      "context": {
+        "surface": "malachite"
+      }
+    },
+    {
+      "name": "chartreuse",
+      "context": {
+        "surface": "chartreuse"
+      }
+    },
+    {
+      "name": "default",
+      "context": {
+        "surface": "default"
+      }
+    }
+  ],
   "context": {
+    "surface": "surface-2",
     "imgTitle": "Card Image",
     "imgUrl": "https://doodleipsum.com/500x500/hand-drawn?i=b48528b59f8d071fde57e51d2d6c433d",
     "title": "Lorem ipsum dolor sit amet,",
