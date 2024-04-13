@@ -1,258 +1,170 @@
-:root {
-    --malachite: #04e762ff;
-    --selective-yellow: #f5b700ff;
-    --celestial-blue: #00a1e4ff;
-    --mexican-pink: #dc0073ff;
-    --chartreuse: #89fc00ff;
-    --black: #000000ff;
-    --white: #ffffffff;
-
-    --brand: var(--celestial-blue);
-    --accent-color: var(--mexican-pink);
-
-    --text-1--light: var(--gray-4);
-    --text-2--light: var(--gray-1);
-    --text-1--dark: var(--gray-12);
-    --text-2--dark: var(--gray-7);
-    --text-1--inverse: var(--text-1--light);
-    --text-2--inverse: var(--text-2--light);
-    --link: var(--malachite);
-    --link-visited: var(--selective-yellow);;
-
-    --sfbrand-1: var(--mexican-pink);
-    --sfbrand-2: var(--celestial-blue);
-    --sfbrand-3: var(--selective-yellow);
-    --sfbrand-4: var(--malachite);
-    --sfbrand-5: var(--chartreuse);
-
-    --font-sans: "Metropolis", sans-serif;
-    --font-serif: "Roboto", serif;
-    --font-thin: "Roboto Thin", "Roboto Light", sans-serif;
-    --font-light: "Roboto Light", sans-serif;
-    --font-mono: "Source Code Pro", monospace;
-    --font-code: "Fira Code", monospace;
-}
-
-@media (prefers-color-scheme: dark) {
-    :root {
-        --brand: var(--mexican-pink);
-        --accent-color: var(--celestial-blue);
-
-        --text-1--inverse: var(--text-1--dark);
-        --text-2--inverse: var(--text-2--dark);
-    }
-}
+@import "open-props.min.css";
+@import "open-props-normalize.min.css";
+@import "open-props-buttons.min.css";
+@import "../fonts/fonts.css";
+@import "variables/palette.css";
+@import "variables/gradients.css";
+@import "variables/surface.css";
+@import "variables/patterns.css";
+@import "variables/text.css";
+@import "variables/brand.css";
+@import "animations/logo.css";
+@import "tags/article.css";
+@import "tags/blockquote.css";
+@import "components/alert.css";
+@import "components/emphasis-box.css";
+@import "components/footer.css";
+@import "components/zebra-box.css";
 
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    line-height: var(--font-lineheight-4);
+  margin: 0;
+  line-height: var(--font-lineheight-4);
 }
 
 a {
-    color: var(--celestial-blue);
+  color: var(--link);
+
+  &:hover {
+    color: var(--link-hover);
+  }
+
+  &:visited {
+    color: var(--link-visited);
+  }
 }
 
 h1 {
-    color: var(--brand);
-}
-
-blockquote {
-    color: var(--text-1);
-    border-color: var(--brand);
-    background-color: var(--surface-2);
-    justify-self: flex-start;
-}
-
-blockquote.default,
-blockquote.mexican-pink {
-    color: var(--text-2);
-    border-color: var(--mexican-pink);
-}
-
-blockquote.malachite {
-    color: var(--text-2);
-    border-color: var(--malachite);
-}
-
-blockquote.selective-yellow {
-    color: var(--text-2);
-    border-color: var(--selective-yellow);
-}
-
-blockquote.celestial-blue {
-    color: var(--text-2);
-    border-color: var(--celestial-blue);
-}
-
-blockquote.chartreuse {
-    color: var(--text-2);
-    border-color: var(--chartreuse);
+  color: var(--brand);
 }
 
 code {
-    font-family: var(--font-code);
+  font-family: var(--font-code);
 }
 
 
 .container {
-    width: min(100% - 2rem, 50rem);
-    margin-inline: auto;
-}
-
-.alert {
-    border-radius: var(--radius-3);
-    display: grid;
-    /*place-content: center;*/
-    font-size: var(--font-size-3);
-    font-weight: var(--font-weight-2);
-    box-shadow: var(--shadow-6);
-    padding: var(--size-3);
-}
-.alert h3 {
-    color: var(--text-1);
-}
-.alert p {
-    color: var(--text-2);
-    font-family: var(--font-serif);
-}
-@media (prefers-color-scheme: dark) {
-    .alert h3 {
-        color: var(--text-1--inverse);
-    }
-    .alert p {
-        color: var(--text-2--inverse);
-    }
-}
-
-.alert--default,
-.alert--notice {
-    background-color: var(--surface-4);
-}
-.alert--default h3,
-.alert--notice h3 {
-    color: var(--text-1);
-}
-.alert--default p,
-.alert--notice p {
-    color: var(--text-2);
-}
-@media (prefers-color-scheme: dark) {
-    .alert--default h3,
-    .alert--notice h3 {
-        color: var(--text-1--inverse);
-    }
-    .alert--default p,
-    .alert--notice p {
-        color: var(--text-2--inverse);
-    }
-}
-
-.alert--error {
-    background-color: var(--mexican-pink);
-}
-
-.alert--warning {
-    background-color: var(--selective-yellow);
-}
-
-.alert--success {
-    background-color: var(--malachite);
-}
-
-.alert--info {
-    background-color: var(--celestial-blue);
+  width: min(100% - 2rem, 50rem);
+  margin-inline: auto;
 }
 
 .card {
-    flex-basis: var(--size-content-1);
-    display: flex;
-    flex-direction: column;
-    gap: var(--size-2);
-    background: var(--surface-3);
-    border: 1px solid var(--surface-1);
-    padding: var(--size-4);
-    border-radius: var(--radius-3);
-    box-shadow: var(--shadow-2);
+  flex-basis: var(--size-content-1);
+  display: flex;
+  flex-direction: column;
+  gap: var(--size-2);
+  background: var(--surface-3);
+  border: 1px solid var(--surface-1);
+  padding: var(--size-4);
+  border-radius: var(--radius-3);
+  box-shadow: var(--shadow-2);
+}
+
+.card--mexican-pink {
+  background-color: var(--mexican-pink);
+}
+
+.card--celestial-blue {
+  background-color: var(--celestial-blue);
+}
+
+.card--selective-yellow {
+  background-color: var(--selective-yellow);
+  color: var(--text-1--dark);
+}
+
+.card--malachite {
+  background-color: var(--malachite);
+  color: var(--text-1--dark);
+}
+
+.card--chartreuse {
+  background-color: var(--chartreuse);
+  color: var(--text-1--dark);
 }
 
 .card > h5 {
-    line-height: var(--font-lineheight-1);
+  line-height: var(--font-lineheight-1);
 }
 
 .footer {
-    background-color: var(--surface-3);
+  background-color: var(--surface-3);
 }
 
 .intro {
-    padding-block: var(--size-9);
-    margin-block-end: var(--size-9);
-    box-shadow: var(--shadow-3);
+  padding-block: var(--size-9);
+  margin-block-end: var(--size-9);
+  box-shadow: var(--shadow-3);
 }
 
 .intro--default {
-    background-color: var(--surface-2);
+  background-color: var(--surface-2);
 }
 
 .intro--malachite {
-    background-color: var(--malachite);
+  background-color: var(--malachite);
 }
+
 .intro--malachite .title {
-    color: var(--text-1);
+  color: var(--text-1);
 }
 
 .intro--selective-yellow {
-    background-color: var(--selective-yellow);
+  background-color: var(--selective-yellow);
 }
+
 .intro--selective-yellow .subtitle,
-.intro--selective-yellow .title{
-    color: var(--text-1--dark);
+.intro--selective-yellow .title {
+  color: var(--text-1--dark);
 }
 
 .intro--celestial-blue {
-    background-color: var(--celestial-blue);
+  background-color: var(--celestial-blue);
 }
+
 .intro--celestial-blue .subtitle,
-.intro--celestial-blue .title{
-    color: var(--text-1);
+.intro--celestial-blue .title {
+  color: var(--text-1);
 }
 
 .intro--mexican-pink {
-    background-color: var(--mexican-pink);
+  background-color: var(--mexican-pink);
 }
+
 .intro--mexican-pink .subtitle,
-.intro--mexican-pink .title{
-    color: var(--text-1);
+.intro--mexican-pink .title {
+  color: var(--text-1);
 }
 
 .intro--chartreuse {
-    background-color: var(--chartreuse);
+  background-color: var(--chartreuse);
 }
+
 .intro--chartreuse .subtitle,
-.intro--chartreuse .title{
-    color: var(--text-1--dark);
+.intro--chartreuse .title {
+  color: var(--text-1--dark);
 }
 
 .title {
-    font-family: var(--font-light);
+  font-family: var(--font-serif-light);
 }
 
 .subtitle {
-    font-family: var(--font-thin);
+  font-family: var(--font-serif-thin);
 }
 
 
 .token:is(.string, .attr-value) {
-    color: var(--teal-0);
-    text-shadow: 0 0 10px var(--teal-5),0 0 25px var(--teal-7);
+  color: var(--teal-0);
+  text-shadow: 0 0 10px var(--teal-5), 0 0 25px var(--teal-7);
 }
 
 .token:is(.comment, .punctuation) {
-    color: var(--gray-5);
-    text-shadow: none;
+  color: var(--gray-5);
+  text-shadow: none;
 }
