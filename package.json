@@ -3,6 +3,18 @@
   "private": true,
   "version": "0.1.0",
   "license": "MIT",
+  "author": "The reactive graph contributors",
+  "homepage": "https://design.reactive-graph.io/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/reactive-graph/design.git"
+  },
+  "bugs": {
+    "url": "https://github.com/reactive-graph/design/issues"
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
     "@frctl/fractal": "^1.5.15",
     "@frctl/handlebars": "^1.2.15",
