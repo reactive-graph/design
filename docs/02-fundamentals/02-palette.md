@@ -15,6 +15,8 @@ status: stable
 
 We use the colors in the defined order.
 
+You must make sure that the contrast ratio of text and interactive elements meets level AA of the Web Content Accessibility Guidelines (WCAG 2.1).
+
 ## Variations
 
 ### Transparency colors
