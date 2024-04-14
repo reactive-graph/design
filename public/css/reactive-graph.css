@@ -1,7 +1,6 @@
 @import "open-props.min.css";
 @import "open-props-normalize.min.css";
 @import "open-props-buttons.min.css";
-@import "atoms/atoms.css";
 @import "../fonts/fonts.css";
 @import "variables/palette.css";
 @import "variables/gradients.css";
@@ -9,13 +8,10 @@
 @import "variables/patterns.css";
 @import "variables/text.css";
 @import "variables/brand.css";
+@import "atoms/atoms.css";
+@import "molecules/molecules.css";
+@import "organisms/organisms.css";
 @import "animations/logo.css";
-@import "tags/article.css";
-@import "tags/blockquote.css";
-@import "components/alert.css";
-@import "components/emphasis-box.css";
-@import "components/footer.css";
-@import "components/zebra-box.css";
 
 *,
 *::before,
