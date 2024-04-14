@@ -1,6 +1,6 @@
 {
   "title": "Token",
-  "status": "wip",
+  "status": "prototype",
   "context": {
     "token": "This is a token"
   }
