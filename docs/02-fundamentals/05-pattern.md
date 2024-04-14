@@ -3,7 +3,7 @@ title: Patterns
 status: beta
 ---
 
-All patterns use the colors defined in the [Palette](./03-palette.md).
+All patterns use the colors defined in the [Palette](./02-palette).
 
 ## Pattern 1 `(Japanese Pattern 2)`
 

@@ -3,7 +3,7 @@ title: Gradients
 status: beta
 ---
 
-All gradients use the colors defined in the [Palette](./03-palette.md).
+All gradients use the colors defined in the [Palette](./02-palette).
 
 ## Linear Gradients
 
