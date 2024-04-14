@@ -1,51 +1,45 @@
 {
-  "title": "Token",
+  "title": "Tag",
   "status": "prototype",
   "variants": [
     {
       "name": "default",
       "context": {
-        "token": "string"
-      }
-    },
-    {
-      "name": "punctuation",
-      "context": {
-        "token": "punctuation"
+        "tag": "string"
       }
     },
     {
       "name": "component",
       "context": {
-        "token": "component"
+        "tag": "component"
       }
     },
     {
       "name": "entity-type",
       "context": {
-        "token": "entity type"
+        "tag": "entity type"
       }
     },
     {
       "name": "entity-instance",
       "context": {
-        "token": "entity instance"
+        "tag": "entity instance"
       }
     },
     {
       "name": "relation-type",
       "context": {
-        "token": "relation type"
+        "tag": "relation type"
       }
     },
     {
       "name": "relation-instance",
       "context": {
-        "token": "relation instance"
+        "tag": "relation instance"
       }
     }
   ],
   "context": {
-    "token": "default"
+    "tag": "default"
   }
 }
