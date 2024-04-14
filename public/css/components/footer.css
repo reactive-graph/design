@@ -159,7 +159,7 @@ footer.rg-footer {
     }
 
     &:nth-child(5n+1) {
-      background-image: var(--pattern-1--charteuse);
+      background-image: var(--pattern-1--chartreuse);
       color: var(--chartreuse);
 
       & h5.rg-footer-heading {
@@ -168,7 +168,7 @@ footer.rg-footer {
       }
 
       &:hover {
-        background-image: var(--pattern-1--charteuse--fill);
+        background-image: var(--pattern-1--chartreuse--fill);
       }
     }
 
