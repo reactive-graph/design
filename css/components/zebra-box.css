@@ -47,7 +47,7 @@ section.rg-zebra-box {
   }
 
   &.chartreuse {
-    background-image: var(--pattern-2--charteuse);
+    background-image: var(--pattern-2--chartreuse);
     color: var(--text-1--dark);
   }
 
