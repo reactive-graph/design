@@ -1,6 +1,7 @@
 @import "open-props.min.css";
 @import "open-props-normalize.min.css";
 @import "open-props-buttons.min.css";
+@import "atoms/atoms.css";
 @import "../fonts/fonts.css";
 @import "variables/palette.css";
 @import "variables/gradients.css";
@@ -156,15 +157,4 @@ code {
 
 .subtitle {
   font-family: var(--font-serif-thin);
-}
-
-
-.token:is(.string, .attr-value) {
-  color: var(--teal-0);
-  text-shadow: 0 0 10px var(--teal-5), 0 0 25px var(--teal-7);
-}
-
-.token:is(.comment, .punctuation) {
-  color: var(--gray-5);
-  text-shadow: none;
 }
