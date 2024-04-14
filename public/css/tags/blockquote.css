@@ -59,5 +59,5 @@ blockquote.chartreuse {
   & a {
     color: var(--chartreuse-3--adaptive);
   }
-  background-image: var(--pattern-1--charteuse);
+  background-image: var(--pattern-1--chartreuse);
 }
