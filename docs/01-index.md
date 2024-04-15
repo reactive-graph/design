@@ -1,14 +1,11 @@
 ---
 title: Reactive Graph - Design System
 status: alpha
-context:
-  items:
-    - Finish the docs
-    - Write tests
-    - Make the tea
 ---
 
-## Component preview links:
+This is a design system for Reactive Graph websites and applications. It establishes a common design language, provides reusable coded components, and outlines high level guidelines for content and accessibility.
+
+{{ render '@intro' }}
 
 <img src="{{ path '/logo/full/reactive-graph-full-mexican-pink.svg' }}" style="height: 240px;" alt="Reactive Graph">
 
