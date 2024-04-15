@@ -10,6 +10,9 @@ All gradients use the colors defined in the [Palette](./02-palette).
 | Gradient                                                                                                                                                 |
 |----------------------------------------------------------------------------------------------------------------------------------------------------------|
 | <code style="display: block; padding-block: var(--size-4); color: var(--text-1--dark); background: var(--linear-gradient-1);">--linear-gradient-1</code> |
+| <code style="display: block; padding-block: var(--size-4); color: var(--text-1--dark); background: var(--linear-gradient-2);">--linear-gradient-2</code> |
+| <code style="display: block; padding-block: var(--size-4); color: var(--text-1--dark); background: var(--linear-gradient-3);">--linear-gradient-3</code> |
+| <code style="display: block; padding-block: var(--size-4); color: var(--text-1--dark); background: var(--linear-gradient-4);">--linear-gradient-4</code> |
 
 ## Striped Gradients
 
