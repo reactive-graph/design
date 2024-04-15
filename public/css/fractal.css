@@ -1,3 +1,7 @@
+html {
+  font-family: var(--font-sans);
+}
+
 .Header {
   background-color: var(--surface-1);
   color: var(--mexican-pink);
