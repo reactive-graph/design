@@ -1,3 +1,7 @@
+.footer {
+  background-color: var(--surface-3);
+}
+
 footer.rg-footer {
   --section-size: 250px;
 

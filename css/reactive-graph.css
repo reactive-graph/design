@@ -1,7 +1,6 @@
 @import "open-props.min.css";
 @import "open-props-normalize.min.css";
 @import "open-props-buttons.min.css";
-@import "atoms/atoms.css";
 @import "../fonts/fonts.css";
 @import "variables/palette.css";
 @import "variables/gradients.css";
@@ -9,13 +8,9 @@
 @import "variables/patterns.css";
 @import "variables/text.css";
 @import "variables/brand.css";
-@import "animations/logo.css";
-@import "tags/article.css";
-@import "tags/blockquote.css";
-@import "components/alert.css";
-@import "components/emphasis-box.css";
-@import "components/footer.css";
-@import "components/zebra-box.css";
+@import "atoms/atoms.css";
+@import "molecules/molecules.css";
+@import "organisms/organisms.css";
 
 *,
 *::before,
@@ -48,113 +43,7 @@ code {
   font-family: var(--font-code);
 }
 
-
 .container {
   width: min(100% - 2rem, 50rem);
   margin-inline: auto;
-}
-
-.card {
-  flex-basis: var(--size-content-1);
-  display: flex;
-  flex-direction: column;
-  gap: var(--size-2);
-  background: var(--surface-3);
-  border: 1px solid var(--surface-1);
-  padding: var(--size-4);
-  border-radius: var(--radius-3);
-  box-shadow: var(--shadow-2);
-}
-
-.card--mexican-pink {
-  background-color: var(--mexican-pink);
-}
-
-.card--celestial-blue {
-  background-color: var(--celestial-blue);
-}
-
-.card--selective-yellow {
-  background-color: var(--selective-yellow);
-  color: var(--text-1--dark);
-}
-
-.card--malachite {
-  background-color: var(--malachite);
-  color: var(--text-1--dark);
-}
-
-.card--chartreuse {
-  background-color: var(--chartreuse);
-  color: var(--text-1--dark);
-}
-
-.card > h5 {
-  line-height: var(--font-lineheight-1);
-}
-
-.footer {
-  background-color: var(--surface-3);
-}
-
-.intro {
-  padding-block: var(--size-9);
-  margin-block-end: var(--size-9);
-  box-shadow: var(--shadow-3);
-}
-
-.intro--default {
-  background-color: var(--surface-2);
-}
-
-.intro--malachite {
-  background-color: var(--malachite);
-}
-
-.intro--malachite .title {
-  color: var(--text-1);
-}
-
-.intro--selective-yellow {
-  background-color: var(--selective-yellow);
-}
-
-.intro--selective-yellow .subtitle,
-.intro--selective-yellow .title {
-  color: var(--text-1--dark);
-}
-
-.intro--celestial-blue {
-  background-color: var(--celestial-blue);
-}
-
-.intro--celestial-blue .subtitle,
-.intro--celestial-blue .title {
-  color: var(--text-1);
-}
-
-.intro--mexican-pink {
-  background-color: var(--mexican-pink);
-}
-
-.intro--mexican-pink .subtitle,
-.intro--mexican-pink .title {
-  color: var(--text-1);
-}
-
-.intro--chartreuse {
-  background-color: var(--chartreuse);
-}
-
-.intro--chartreuse .subtitle,
-.intro--chartreuse .title {
-  color: var(--text-1--dark);
-}
-
-.title {
-  font-family: var(--font-serif-light);
-}
-
-.subtitle {
-  font-family: var(--font-serif-thin);
 }
