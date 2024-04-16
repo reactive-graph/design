@@ -6,7 +6,6 @@ article {
     margin-block-end: var(--size-3);
   }
   p.rg-article-intro {
-    /*color: var(--text-2);*/
     color: var(--accent-color);
     font-size: var(--font-size-fluid-1);
     margin-block-end: var(--size-3);
