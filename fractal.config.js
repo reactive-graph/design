@@ -60,19 +60,19 @@ fractal.docs.set('statuses', {
   }
 });
 fractal.docs.set('default.status', 'alpha');
-const hbs = require('@frctl/handlebars')({
-    helpers: {
-        componentList: function () {
-            let ret = "<ul>";
-            const options = Array.from(arguments).pop();
-            for (let component of fractal.components.flatten()) {
-                ret = ret + "<li>" + options.fn(component.toJSON()) + "</li>";
-            }
-            return ret + "</ul>";
-        }
+const handlebars = require('@frctl/handlebars')({
+  helpers: {
+    componentList: function () {
+      let ret = "<ul>";
+      const options = Array.from(arguments).pop();
+      for (let component of fractal.components.flatten()) {
+        ret = ret + "<li>" + options.fn(component.toJSON()) + "</li>";
+      }
+      return ret + "</ul>";
     }
+  }
 });
-fractal.docs.engine(hbs);
+fractal.docs.engine(handlebars);
 
 fractal.web.set('static.path', path.join(__dirname, 'public'));
 fractal.web.set('builder.dest', path.join(__dirname, 'build'));
