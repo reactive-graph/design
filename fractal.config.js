@@ -79,39 +79,39 @@ fractal.web.set('builder.dest', path.join(__dirname, 'build'));
 fractal.web.set('server.sync', true);
 
 const customTheme = mandelbrot({
-        styles: [
-            'default',
-            '/css/fractal.css',
-            '/css/reactive-graph.css'
-        ],
-        favicon: '/favicon/favicon.svg',
-        skin: {
-            name: 'default',
-            accent: '#00a1e4',
-            complement: '#dc0073',
-            links: '#00a1e4',
-        },
-        nav: ['search', 'docs', 'components'],
-        navigation: 'split',
-        information: [
-            {
-                label: 'Name',
-                value: require('./package.json').name,
-            },
-            {
-                label: 'Version',
-                value: require('./package.json').version,
-            },
-            {
-                label: 'Built on',
-                value: new Date(),
-                type: 'time', // Outputs a <time /> HTML tag
-                format: (value) => {
-                    return value.toLocaleDateString('en');
-                }
-            }
-        ],
-    }
+    styles: [
+      'default',
+      '/css/fractal.css',
+      '/css/reactive-graph.css'
+    ],
+    favicon: '/favicon/favicon.svg',
+    skin: {
+      name: 'default',
+      accent: '#00a1e4',
+      complement: '#dc0073',
+      links: '#00a1e4',
+    },
+    nav: ['search', 'docs', 'components'],
+    navigation: 'split',
+    information: [
+      {
+        label: 'Name',
+        value: require('./package.json').name,
+      },
+      {
+        label: 'Version',
+        value: require('./package.json').version,
+      },
+      {
+        label: 'Built on',
+        value: new Date(),
+        type: 'time', // Outputs a <time /> HTML tag
+        format: (value) => {
+          return value.toLocaleDateString('en');
+        }
+      }
+    ],
+  }
 );
 
 fractal.web.theme(customTheme);
