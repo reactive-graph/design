@@ -27,6 +27,23 @@ section.rg-emphasis-box {
   & p {
     font-family: var(--font-sans-light);
     font-size: var(--font-size-3);
+    rotate: -1deg;
+    padding-inline-start: var(--size-8);
+
+    &.intro {
+      font-size: var(--font-size-fluid-1);
+      font-weight: bolder;
+      text-shadow: 0 0 10px var(--text-1--inverse), 0 0 25px var(--text-1);
+
+      margin-block-end: var(--size-3);
+    }
+  }
+
+  & ul {
+    font-family: var(--font-sans-thin);
+    font-size: var(--font-size-2);
+    rotate: -1deg;
+    padding-inline-start: var(--size-8);
   }
 
   &.malachite {
