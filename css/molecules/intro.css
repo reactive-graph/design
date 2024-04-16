@@ -1,53 +1,53 @@
-.intro {
+.rg-intro {
   padding-block: var(--size-9);
   margin-block-end: var(--size-9);
   box-shadow: var(--shadow-3);
 }
 
-.intro--default {
+.rg-intro--default {
   background-color: var(--surface-2);
 }
 
-.intro--malachite {
+.rg-intro--malachite {
   background-color: var(--malachite);
 }
 
-.intro--malachite .title {
+.rg-intro--malachite .title {
   color: var(--text-1);
 }
 
-.intro--selective-yellow {
+.rg-intro--selective-yellow {
   background-color: var(--selective-yellow);
 }
 
-.intro--selective-yellow .subtitle,
-.intro--selective-yellow .title {
+.rg-intro--selective-yellow .subtitle,
+.rg-intro--selective-yellow .title {
   color: var(--text-1--dark);
 }
 
-.intro--celestial-blue {
+.rg-intro--celestial-blue {
   background-color: var(--celestial-blue);
 }
 
-.intro--celestial-blue .subtitle,
-.intro--celestial-blue .title {
+.rg-intro--celestial-blue .subtitle,
+.rg-intro--celestial-blue .title {
   color: var(--text-1);
 }
 
-.intro--mexican-pink {
+.rg-intro--mexican-pink {
   background-color: var(--mexican-pink);
 }
 
-.intro--mexican-pink .subtitle,
-.intro--mexican-pink .title {
+.rg-intro--mexican-pink .subtitle,
+.rg-intro--mexican-pink .title {
   color: var(--text-1);
 }
 
-.intro--chartreuse {
+.rg-intro--chartreuse {
   background-color: var(--chartreuse);
 }
 
-.intro--chartreuse .subtitle,
-.intro--chartreuse .title {
+.rg-intro--chartreuse .subtitle,
+.rg-intro--chartreuse .title {
   color: var(--text-1--dark);
 }
