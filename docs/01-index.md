@@ -25,7 +25,27 @@ status: alpha
 </section>
 
 <section class="rg-emphasis-box">
-  <h3>Fundamentals</h3>
+  <h3>Web Components</h3>
+  <p class="intro">
+    Web Components is a suite of different technologies allowing you to create reusable custom elements — with their
+    functionality encapsulated away from the rest of your code — and utilize them in your web apps.
+  </p>
+  <p>
+    <strong>Interoperability:</strong> The design system is reusable and work across different JavaScript frameworks or
+    vanilla JavaScript projects.
+  </p>
+  <p>
+    <strong>Different Tech Stacks:</strong> The design system need to be shared across projects with diverse tech
+    stacks.
+  </p>
+  <p>
+    <strong>Micro Frontends:</strong> The design system serves as a neutral interface between different parts of a
+    micro frontend architecture.
+  </p>
+</section>
+
+<section class="rg-emphasis-box">
+  <h3>Design System Fundamentals</h3>
   <p class="intro">
     The fundamentals define the <a href="/docs/fundamentals/palette">color palette</a>,
     the <a href="/docs/fundamentals/fonts">fonts</a>, the <a href="/docs/fundamentals/logo">logo</a>,
