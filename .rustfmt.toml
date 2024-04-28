@@ -1,0 +1,5 @@
+max_width = 160
+fn_call_width = 110
+# nightly only:
+# comment_width = 120
+# imports_granularity = "Item"
