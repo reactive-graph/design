@@ -22,11 +22,6 @@ jobs:
     name: Verify code formatting
     runs-on: ubuntu-latest
     steps:
-      - name: VCS Checkout
-        uses: actions/checkout@v4
-      - name: Install rust (latest stable)
-        uses: actions-rust-lang/setup-rust-toolchain@v1
-        with:
-          components: rustfmt
-      - name: Rustfmt Check
-        uses: actions-rust-lang/rustfmt@v1
+      - uses: actions/checkout@v4
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/rustfmt@v1
