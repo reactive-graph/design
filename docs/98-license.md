@@ -1,4 +1,9 @@
-# MIT License
+---
+title: License
+status: stable
+---
+
+## MIT License
 
 Copyright (c) 2024 Andreas Schaeffer, The Reactive Graph Contributors
 
