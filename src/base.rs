@@ -1,5 +1,5 @@
-use rs_web_component::define_element;
 use rs_web_component::Component;
+use rs_web_component::define_element;
 use web_sys::HtmlElement;
 use web_sys::ShadowRoot;
 
