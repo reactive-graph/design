@@ -26,7 +26,11 @@
     "postcss-cli": "^11.0.0"
   },
   "scripts": {
+    "build": "pnpm run trunk:build && pnpm run fractal:build",
+    "dev": "pnpm run trunk:serve &; pnpm run fractal:start",
     "fractal:start": "fractal start --sync",
-    "fractal:build": "fractal build"
+    "fractal:build": "fractal build",
+    "trunk:serve": "trunk serve",
+    "trunk:build": "trunk build"
   }
 }
