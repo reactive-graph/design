@@ -1,0 +1,6 @@
+[serve]
+port = 8084
+
+#[[proxy]]
+#rewrite = "/api/v1/"
+#backend = "http://localhost:9000/"
