@@ -21,8 +21,9 @@ jobs:
     name: Design
     runs-on: ubuntu-latest
     steps:
-      - name: VCS Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: jetli/trunk-action@v0.5.0
 
       - name: Setup Node 18
         uses: actions/setup-node@v4
@@ -50,6 +51,15 @@ jobs:
 
       - name: Install dependencies
         run: pnpm install
+
+      - name: Build web components
+        run: trunk build
+
+      - name: Copy WASM module into public dir
+        run: cp webcomponents/reactive-graph-design-*_bg.wasm public/reactive-graph-design_bg.wasm
+
+      - name: Copy WASM glue into public dir
+        run: cp webcomponents/reactive-graph-design-*.js public/reactive-graph-design.js
 
       - name: Fractal Build
         run: pnpm run fractal:build

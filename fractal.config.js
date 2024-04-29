@@ -114,4 +114,7 @@ const customTheme = mandelbrot({
   }
 );
 
+// specify a directory to hold the theme override templates
+customTheme.addLoadPath(path.join(__dirname, 'theme', 'views'));
+
 fractal.web.theme(customTheme);

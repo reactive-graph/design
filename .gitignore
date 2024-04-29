@@ -1,7 +1,8 @@
 build
 debug/
 target/
-dist/
+webcomponents/
+public/webcomponents/
 pkg/
 node_modules
 
@@ -20,4 +21,3 @@ Cargo.lock
 .idea
 # MSVC Windows builds of rustc generate these, which store debugging information
 *.pdb
-
