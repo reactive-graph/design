@@ -26,9 +26,9 @@
     "postcss-cli": "^11.0.0"
   },
   "scripts": {
-    "build": "pnpm run trunk:build && pnpm run fractal:build",
-    "dev": "pnpm run trunk:serve &; pnpm run fractal:start",
-    "fractal:start": "fractal start --sync",
+    "build": "trunk build && cp webcomponents/reactive-graph-design-*_bg.wasm public/reactive-graph-design_bg.wasm && cp webcomponents/reactive-graph-design-*.js public/reactive-graph-design.js && pnpm run fractal:build",
+    "dev": "trunk build && cp webcomponents/reactive-graph-design-*_bg.wasm public/reactive-graph-design_bg.wasm && cp webcomponents/reactive-graph-design-*.js public/reactive-graph-design.js && pnpm run fractal:start",
+    "fractal:start": "trunk build && fractal start --sync",
     "fractal:build": "fractal build",
     "trunk:serve": "trunk serve",
     "trunk:build": "trunk build"
