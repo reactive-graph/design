@@ -5,41 +5,99 @@
     {
       "name": "default",
       "context": {
-        "tag": "string"
+        "ty": "string"
       }
     },
     {
-      "name": "component",
+      "name": "component__css",
       "context": {
-        "tag": "component"
+        "ty": "component",
+        "text": "Component",
+        "renderAsCss": true
       }
     },
     {
-      "name": "entity-type",
+      "name": "component__web-components",
       "context": {
-        "tag": "entity type"
+        "ty": "component",
+        "text": "Component",
+        "renderAsCss": false,
+        "renderAsWebComponents": true
       }
     },
     {
-      "name": "entity-instance",
+      "name": "entity-type__css",
       "context": {
-        "tag": "entity instance"
+        "ty": "entity-type",
+        "text": "Entity Type",
+        "renderAsCss": true
       }
     },
     {
-      "name": "relation-type",
+      "name": "entity-type__web-components",
       "context": {
-        "tag": "relation type"
+        "ty": "entity-type",
+        "text": "Entity Type",
+        "renderAsCss": false,
+        "renderAsWebComponents": true
       }
     },
     {
-      "name": "relation-instance",
+      "name": "entity-instance__css",
       "context": {
-        "tag": "relation instance"
+        "ty": "entity-instance",
+        "text": "Entity Instance",
+        "renderAsCss": true
+      }
+    },
+    {
+      "name": "entity-instance__web-components",
+      "context": {
+        "ty": "entity-instance",
+        "text": "Entity Instance",
+        "renderAsCss": false,
+        "renderAsWebComponents": true
+      }
+    },
+    {
+      "name": "relation-type__css",
+      "context": {
+        "ty": "relation-type",
+        "text": "Relation Type",
+        "renderAsCss": true
+      }
+    },
+    {
+      "name": "relation-type__web-components",
+      "context": {
+        "ty": "relation-type",
+        "text": "Relation Type",
+        "renderAsCss": false,
+        "renderAsWebComponents": true
+      }
+    },
+    {
+      "name": "relation-instance__css",
+      "context": {
+        "ty": "relation-instance",
+        "text": "Relation Instance",
+        "renderAsCss": true
+      }
+    },
+    {
+      "name": "relation-instance__web-components",
+      "context": {
+        "ty": "relation-instance",
+        "text": "Relation Instance",
+        "renderAsCss": false,
+        "renderAsWebComponents": true
       }
     }
   ],
   "context": {
-    "tag": "default"
+    "ty": "string",
+    "text": "string",
+    "renderAsCss": true,
+    "renderAsWebComponents": false
   }
 }
