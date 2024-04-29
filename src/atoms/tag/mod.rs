@@ -36,16 +36,14 @@ impl Component for RgTag {
     return vec!["ty".to_string()];
   }
 
-  fn attribute_changed_callback(&self, _name: String, _old_value: JsValue, _new_value: JsValue) {
-  }
+  fn attribute_changed_callback(&self, _name: String, _old_value: JsValue, _new_value: JsValue) {}
 
   fn connected_callback(&mut self) {
     self.root = RootVal::Value(self.get_this().attach_shadow(&ShadowRootInit::new(ShadowRootMode::Open)).unwrap());
     self.rerender();
   }
 
-  fn disconnected_callback(&self) {
-  }
+  fn disconnected_callback(&self) {}
 }
 
 impl RgTag {
