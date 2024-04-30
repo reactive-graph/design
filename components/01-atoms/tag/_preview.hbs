@@ -8,7 +8,8 @@
   <link rel="icon" type="image/png" href="{{ path '/favicon/favicon.png' }}">
   <link rel="stylesheet" href="{{ path '/css/reactive-graph.css' }}">
   <title>Preview</title>
-  <link rel="preload" href="{{ path '/reactive-graph-design_bg.wasm' }}" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="preload" href="{{ path '/reactive-graph-design_bg.wasm' }}" crossorigin="anonymous" as="fetch"
+        type="application/wasm">
   <link rel="modulepreload" href="{{ path '/reactive-graph-design.js' }}" crossorigin="anonymous">
 </head>
 <body>
@@ -16,8 +17,8 @@
   <details open>
     <summary>
       <span class="font-black">&lt;p&gt;
-      {{#if _target.context.renderAsCss}}CSS Styled{{/if}}
-      {{#if _target.context.renderAsWebComponents}}Web Components{{/if}}
+        {{#if _target.context.renderAsCss}}CSS Styled{{/if}}
+        {{#if _target.context.renderAsWebComponents}}Web Components{{/if}}
       </span>
     </summary>
     <p>This is a {{{ yield }}} tag</p>
@@ -90,6 +91,7 @@
 </main>
 <script type="module">
   import init, * as bindings from "{{ path '/reactive-graph-design.js' }}";
+
   init("{{ path '/reactive-graph-design_bg.wasm' }}");
   window.wasmBindings = bindings;
 </script>
