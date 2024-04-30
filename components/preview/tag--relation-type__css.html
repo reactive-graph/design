@@ -10,7 +10,8 @@
   <link rel="icon" type="image/png" href="../../favicon/favicon.png">
   <link rel="stylesheet" href="../../css/reactive-graph.css">
   <title>Preview</title>
-  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch"
+        type="application/wasm">
   <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
 </head>
 <body>
@@ -18,8 +19,8 @@
   <details open>
     <summary>
       <span class="font-black">&lt;p&gt;
-      CSS Styled
-      
+        CSS Styled
+        
       </span>
     </summary>
     <p>This is a   <span class="tag rg-relation-type">Relation Type</span>
@@ -100,6 +101,7 @@
 </main>
 <script type="module">
   import init, * as bindings from "../../reactive-graph-design.js";
+
   init("../../reactive-graph-design_bg.wasm");
   window.wasmBindings = bindings;
 </script>

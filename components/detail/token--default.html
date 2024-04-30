@@ -184,7 +184,7 @@
 <div class="Browser-panel Browser-code is-active" data-role="tab-panel" id="browser-85599959cbfde5c3b5c551bc04759485-panel-html">
     <code class="Code Code--lang-html hljs">
         
-        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;token string&quot;</span>&gt;</span>string<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
+        <pre><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;token rg-string&quot;</span>&gt;</span>string<span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></pre>
         
     </code>
 </div>
@@ -192,7 +192,12 @@
     
     <div class="Browser-panel Browser-code" data-role="tab-panel" id="browser-85599959cbfde5c3b5c551bc04759485-panel-view">
     <code class="Code Code--lang-handlebars hljs">
-        <pre><span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;token string&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">token</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span></span></pre>
+        <pre><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> renderAsCss}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;token rg-</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">ty</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">text</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span><span class="xml">
+</span><span class="hljs-template-tag">{{#<span class="hljs-name"><span class="hljs-builtin-name">if</span></span> renderAsWebComponents}}</span><span class="xml">
+  <span class="hljs-tag">&lt;<span class="hljs-name">rg-token</span> <span class="hljs-attr">ty</span>=<span class="hljs-string">&quot;</span></span></span><span class="hljs-template-variable">{{<span class="hljs-name">ty</span>}}</span><span class="xml"><span class="hljs-tag"><span class="hljs-string">&quot;</span>&gt;</span></span><span class="hljs-template-variable">{{<span class="hljs-name">text</span>}}</span><span class="xml"><span class="hljs-tag">&lt;/<span class="hljs-name">rg-token</span>&gt;</span>
+</span><span class="hljs-template-tag">{{/<span class="hljs-name"><span class="hljs-builtin-name">if</span></span>}}</span></pre>
     </code>
 </div>
 
@@ -202,7 +207,10 @@
         
             
             <pre>{
-  <span class="hljs-attr">&quot;token&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>
+  <span class="hljs-attr">&quot;ty&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;text&quot;</span>: <span class="hljs-string">&quot;string&quot;</span>,
+  <span class="hljs-attr">&quot;renderAsCss&quot;</span>: <span class="hljs-literal">true</span>,
+  <span class="hljs-attr">&quot;renderAsWebComponents&quot;</span>: <span class="hljs-literal">false</span>
 }</pre>
             
         
@@ -2870,14 +2878,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--punctuation.html"
+                href="./token--component__css.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--punctuation"
+                data-test="token--component__css"
                 data-handle="token"
             >
-                <span>Punctuation</span>
+                <span>Component Css</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2904,14 +2912,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--component.html"
+                href="./token--component__web-components.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--component"
+                data-test="token--component__web-components"
                 data-handle="token"
             >
-                <span>Component</span>
+                <span>Component Web Components</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2938,14 +2946,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--entity-type.html"
+                href="./token--entity-type__css.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--entity-type"
+                data-test="token--entity-type__css"
                 data-handle="token"
             >
-                <span>Entity Type</span>
+                <span>Entity Type Css</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -2972,14 +2980,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--entity-instance.html"
+                href="./token--entity-type__web-components.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--entity-instance"
+                data-test="token--entity-type__web-components"
                 data-handle="token"
             >
-                <span>Entity Instance</span>
+                <span>Entity Type Web Components</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3006,14 +3014,14 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--relation-type.html"
+                href="./token--entity-instance__css.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--relation-type"
+                data-test="token--entity-instance__css"
                 data-handle="token"
             >
-                <span>Relation Type</span>
+                <span>Entity Instance Css</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3040,14 +3048,150 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a
                 class="Tree-entityLink"
-                href="./token--relation-instance.html"
+                href="./token--entity-instance__web-components.html"
                 data-role="tree-link"
                 
                 data-pjax
-                data-test="token--relation-instance"
+                data-test="token--entity-instance__web-components"
                 data-handle="token"
             >
-                <span>Relation Instance</span>
+                <span>Entity Instance Web Components</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #dc0073;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./token--relation-type__css.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="token--relation-type__css"
+                data-handle="token"
+            >
+                <span>Relation Type Css</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #dc0073;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./token--relation-type__web-components.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="token--relation-type__web-components"
+                data-handle="token"
+            >
+                <span>Relation Type Web Components</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #dc0073;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./token--relation-instance__css.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="token--relation-instance__css"
+                data-handle="token"
+            >
+                <span>Relation Instance Css</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #dc0073;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="./token--relation-instance__web-components.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="token--relation-instance__web-components"
+                data-handle="token"
+            >
+                <span>Relation Instance Web Components</span>
                 
 
 <div class="Status Status--unlabelled">
