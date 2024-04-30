@@ -38,5 +38,8 @@
     "trunk:serve": "trunk serve",
     "trunk:build": "trunk build"
   },
-  "main": "fractal.config.js"
+  "main": "fractal.config.js",
+  "files": [
+    "build"
+  ]
 }
