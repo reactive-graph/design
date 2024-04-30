@@ -1,10 +1,13 @@
 {
-  "name": "reactive-graph-design",
-  "private": true,
+  "name": "@reactive-graph/design",
   "version": "0.1.0",
   "license": "MIT",
   "author": "The reactive graph contributors",
   "homepage": "https://design.reactive-graph.io/",
+  "keywords": [
+    "reactive-programming",
+    "graph-database"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/reactive-graph/design.git"
