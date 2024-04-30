@@ -36,5 +36,6 @@
     "fractal:build": "fractal build",
     "trunk:serve": "trunk serve",
     "trunk:build": "trunk build"
-  }
+  },
+  "main": "fractal.config.js"
 }
