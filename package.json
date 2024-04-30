@@ -1,5 +1,6 @@
 {
   "name": "@reactive-graph/design",
+  "description": "Design System for Reactive Graph",
   "version": "0.1.0",
   "license": "MIT",
   "author": "The reactive graph contributors",
