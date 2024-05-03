@@ -1,7 +1,7 @@
 {
   "name": "@reactive-graph/design",
   "description": "Design System for Reactive Graph",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "license": "MIT",
   "author": "The reactive graph contributors",
   "homepage": "https://design.reactive-graph.io/",
@@ -40,6 +40,12 @@
   },
   "main": "fractal.config.js",
   "files": [
-    "build"
+    "build/css/**",
+    "build/favicon/**",
+    "build/fonts/**",
+    "build/logo/**",
+    "build/reactive-graph-design.js",
+    "build/reactive-graph-design_bg.wasm",
+    "build/load.js"
   ]
 }
