@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <section class="rg-list-box default default">
+  <div class="container">
+    <ul class="rg-list default default">
+      <li>Line 1</li>
+      <li>Line 2</li>
+      <li>Line 3</li>
+      <li>Line 4</li>
+      <li>Line 5</li>
+      <li>Line 6
+        <ul class="rg-list default default">
+          <li>Line 1</li>
+          <li>Line 2</li>
+          <li>Line 3</li>
+          <li>Line 4</li>
+          <li>Line 5</li>
+        </ul>
+      </li>
+      <li>Line 7</li>
+    </ul>
+  </div>
+</section>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+
