@@ -41,15 +41,15 @@ This repository contains the design system for the <a href="https://github.com/r
 </p>
 
 <p align="center">
-  <a href="https://docs.reactive-graph.io/">docs.reactive-graph.io</a>
+  <a href="https://this-month-in.reactive-graph.io/">this-month-in.reactive-graph.io</a>
   <br>
-  Reference Documentation
+  Monthly summary of the progress and community
 </p>
 
 <p align="center">
-  <a href="https://api.reactive-graph.io/">api.reactive-graph.io</a>
+  <a href="https://docs.reactive-graph.io/book/">docs.reactive-graph.io</a>
   <br>
-  Rust API docs
+  Reference Documentation
 </p>
 
 <h2 align="center">Affected applications</h2>
