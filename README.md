@@ -11,7 +11,7 @@ This repository contains the design system for the <a href="https://github.com/r
 </p>
 
 <p align="center">
-  <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a> is a <b>reactive runtime</b> based on a <b>graph database</b>.
+  <a href="https://github.com/reactive-graph/reactive-graph">Reactive Graph</a> is a <b>reactive runtime</b> based on a <b>graph database</b>, empowering everyone to build reliable and efficient software.
 </p>
 
 <h2 align="center">Design System</h2>
