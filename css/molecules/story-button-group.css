@@ -5,7 +5,7 @@
   place-items: center;
   text-align: center;
   padding: var(--size-4);
-  border-radius: var(--radius-4);
+  border-radius: var(--radius-2);
 }
 
 .story-button-group.size-1 {
@@ -55,8 +55,6 @@
 }
 
 .story-button-group.surface-1 {
-  /*border: var(--border-size-1) solid var(--surface-2);*/
-
   a {
     color: var(--text-1);
     text-shadow: 0 0 5px var(--text-2), 0 0 15px var(--text-1);
@@ -64,8 +62,6 @@
 }
 
 .story-button-group.surface-2 {
-  /*border: var(--border-size-1) solid var(--surface-1);*/
-
   a {
     color: var(--text-1);
     text-shadow: 0 0 5px var(--text-2), 0 0 15px var(--text-1);
@@ -73,8 +69,6 @@
 }
 
 .story-button-group.surface-3 {
-  /*border: var(--border-size-1) solid var(--surface-4);*/
-
   a {
     color: var(--text-1--inverse);
     text-shadow: 0 0 5px var(--text-2--inverse), 0 0 15px var(--text-1--inverse);
@@ -82,8 +76,6 @@
 }
 
 .story-button-group.surface-4 {
-  /*border: var(--border-size-1) solid var(--surface-3);*/
-
   a {
     color: var(--text-1--inverse);
     text-shadow: 0 0 5px var(--text-2--inverse), 0 0 15px var(--text-1--inverse);
@@ -98,7 +90,6 @@
 }
 
 .story-button-group.selective-yellow {
-
   a {
     color: var(--selective-yellow-7--adaptive);
     text-shadow: 0 0 5px var(--selective-yellow-2--adaptive), 0 0 15px var(--selective-yellow-5--adaptive);
@@ -106,7 +97,6 @@
 }
 
 .story-button-group.celestial-blue {
-
   a {
     color: var(--celestial-blue-7--adaptive);
     text-shadow: 0 0 5px var(--celestial-blue-2--adaptive), 0 0 15px var(--celestial-blue-5--adaptive);
@@ -114,16 +104,15 @@
 }
 
 .story-button-group.mexican-pink {
-
   a {
     color: var(--mexican-pink-7--adaptive);
     text-shadow: 0 0 5px var(--mexican-pink-2--adaptive), 0 0 15px var(--mexican-pink-5--adaptive);
   }
 }
 
-.story-button-group.chartreuse a {
-  color: var(--chartreuse-7--adaptive);
-  text-shadow: 0 0 5px var(--chartreuse-2--adaptive), 0 0 15px var(--chartreuse-5--adaptive);
-}
-
+.story-button-group.chartreuse {
+  a {
+    color: var(--chartreuse-7--adaptive);
+    text-shadow: 0 0 5px var(--chartreuse-2--adaptive), 0 0 15px var(--chartreuse-5--adaptive);
+  }
 }

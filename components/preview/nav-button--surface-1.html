@@ -1,0 +1,94 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 id="nav-button" class="mexican-pink">
+    Nav Button
+    <span class="token string" style="font-size: var(--font-size-2)">surface-1</span>
+  </h1>
+  <hr>
+  <h3 class="celestial-blue">Caret Circle</h3>
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-caret-left"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-caret-right"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-caret-up"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-caret-down"></i>
+    </a>
+  </div>
+  <h3 class="celestial-blue">Chevrons Circle</h3>
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-chevrons-left"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-chevrons-right"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-chevrons-up"></i>
+    </a>
+    <a href="#nav-button" class="nav-button surface-1">
+      <i class="ti ti-chevrons-down"></i>
+    </a>
+  </div>
+  <h3 class="celestial-blue">Caret Square</h3>
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-caret-left"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-caret-right"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-caret-up"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-caret-down"></i>
+    </a>
+  </div>
+  <h3 class="celestial-blue">Chevrons Square</h3>
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-chevrons-left"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-chevrons-right"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-chevrons-up"></i>
+    </a>
+    <a href="#nav-button" class="nav-button square surface-1">
+      <i class="ti ti-chevrons-down"></i>
+    </a>
+  </div>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+
