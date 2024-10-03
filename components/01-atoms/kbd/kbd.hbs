@@ -1,23 +1,61 @@
 <div style="padding: var(--size-4);">
   <h1>KBD</h1>
 
+  <h3 class="celestial-blue">Size Modifiers</h3>
+
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+    <div>
+      <kbd class="{{#if modifier}}{{modifier}} {{/if}}">Default Size</kbd>
+    </div>
+    <div>
+      <kbd class="{{#if modifier}}{{modifier}} {{/if}} size-1">size-1</kbd>
+    </div>
+    <div>
+      <kbd class="{{#if modifier}}{{modifier}} {{/if}} size-2">size-2</kbd>
+    </div>
+    <div>
+      <kbd class="{{#if modifier}}{{modifier}} {{/if}} size-3">size-3</kbd>
+    </div>
+    <div>
+      <kbd class="{{#if modifier}}{{modifier}} {{/if}} size-4">size-4</kbd>
+    </div>
+  </div>
+
   <h3 class="celestial-blue">Modifier Keys</h3>
 
-  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));">
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
     <div>
       <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>CTRL</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>SHIFT</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-arrow-big-up"></i> SHIFT</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>META</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>ALT</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-arrow-big-down"></i> CAPS LOCK</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-brand-windows"></i> WINDOWS</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-command"></i> COMMAND</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-arrows-left-right"></i> TAB</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-corner-down-left"></i> RETURN</kbd>
+    </div>
+    <div>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-arrow-left"></i> BACKSPACE</kbd>
     </div>
   </div>
 
   <hr class="surface-3"/>
 
-  <h3 class="celestial-blue">Alpha</h3>
+  <h3 class="celestial-blue">Alpha Keys</h3>
 
   <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));">
     <div>
@@ -51,7 +89,7 @@
 
   <hr class="surface-3"/>
 
-  <h3 class="celestial-blue">Numbers</h3>
+  <h3 class="celestial-blue">Number Keys</h3>
 
   <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));">
     <div>
@@ -88,29 +126,41 @@
 
   <hr class="surface-3"/>
 
-  <h3 class="celestial-blue">Multiple</h3>
+  <h3 class="celestial-blue">Keyboard Shortcuts</h3>
 
-  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));">
+  <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>CTRL + K</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>CTRL</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>K</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>SHIFT + B</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>SHIFT</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>B</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>ALT + F5</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>ALT</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>F5</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>RSHIFT + O</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>RSHIFT</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>O</kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>LCTRL + RSHIFT + Z</kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>LCTRL</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>RSHIFT</kbd>
+      +
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}>Z</kbd>
     </div>
   </div>
 
   <hr class="surface-3"/>
 
-  <h3 class="celestial-blue">Arrows</h3>
+  <h3 class="celestial-blue">Arrow Keys</h3>
 
   <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));">
     <div>
@@ -129,7 +179,7 @@
 
   <hr class="surface-3"/>
 
-  <h3 class="celestial-blue">Icons</h3>
+  <h3 class="celestial-blue">Keys with Icons</h3>
 
   <div style="padding: var(--size-4); display: grid; gap: var(--size-4); grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));">
     <div>
@@ -145,7 +195,7 @@
       <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-brand-mastodon"></i></kbd>
     </div>
     <div>
-      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-brand-windows"></i></kbd>
+      <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-brand-debian"></i></kbd>
     </div>
     <div>
       <kbd {{#if modifier}}class="{{modifier}}"{{/if}}><i class="ti ti-key"></i></kbd>
