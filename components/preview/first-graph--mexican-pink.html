@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 class="mexican-pink">
+    First Graph
+    <span class="token string" style="font-size: var(--font-size-2)">mexican-pink</span>
+  </h1>
+  <hr>
+  <article>
+    <h2 class="mexican-pink">A DIARY OF YOUR EVERY MOVEMENT</h2>
+    <p class="mexican-pink first-graph">
+      The companies that collect all this information on your movements justify their business on the basis of three claims: People consent to be tracked, the
+      data is anonymous and the data is secure.
+    </p>
+    <p>
+      None of those claims hold up, based on the file we’ve obtained and our review of company practices.
+    </p>
+    <p class="mexican-pink first-graph circle">
+      Yes, the location data contains billions of data points with no identifiable information like names or email addresses. But it’s child’s play to connect
+      real names to the dots that appear on the maps.
+    </p>
+    <p>
+      Here’s what that looks like.
+    </p>
+  </article>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

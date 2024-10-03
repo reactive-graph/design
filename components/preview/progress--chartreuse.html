@@ -1,0 +1,51 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 class="mexican-pink">
+    Progress
+    <span class="token string" style="font-size: var(--font-size-2)">chartreuse</span>
+  </h1>
+  <div>
+    <progress class="chartreuse" max="100" value="0"></progress>
+  </div>
+  <div>
+    <progress class="chartreuse" max="100" value="25"></progress>
+  </div>
+  <div>
+    <progress class="chartreuse" max="100" value="50"></progress>
+  </div>
+  <div>
+    <progress class="chartreuse" max="100" value="75"></progress>
+  </div>
+  <div>
+    <progress class="chartreuse" max="100" value="100"></progress>
+  </div>
+  <div>
+    <progress class="chartreuse"></progress>
+  </div>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

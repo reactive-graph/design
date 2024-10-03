@@ -1,6 +1,11 @@
+@import "avatar.css";
 @import "blockquote.css";
+@import "first-graph.css";
+@import "heading.css";
 @import "hr.css";
+@import "kbd.css";
 @import "lists.css";
+@import "progress.css";
 @import "subtitle.css";
 @import "surface.css";
 @import "tag.css";

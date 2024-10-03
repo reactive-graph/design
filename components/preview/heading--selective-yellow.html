@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 class="selective-yellow">H1 The quick brown fox jumps over the lazy dog</h1>
+  <hr class="selective-yellow">
+  <h2 class="selective-yellow">H2 The quick brown fox jumps over the lazy dog</h2>
+  <hr class="selective-yellow">
+  <h3 class="selective-yellow">H3 The quick brown fox jumps over the lazy dog</h3>
+  <hr class="selective-yellow">
+  <h4 class="selective-yellow">H4 The quick brown fox jumps over the lazy dog</h4>
+  <hr class="selective-yellow">
+  <h5 class="selective-yellow">H5 The quick brown fox jumps over the lazy dog</h5>
+  <hr class="selective-yellow">
+  <h6 class="selective-yellow">H6 The quick brown fox jumps over the lazy dog</h6>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+
