@@ -1,0 +1,29 @@
+kbd.default {
+  color: var(--text-1--inverse);
+  background-color: var(--text-1);
+}
+
+kbd.malachite {
+  color: var(--text-1--dark);
+  background-color: var(--malachite-3--adaptive);
+}
+
+kbd.selective-yellow {
+  color: var(--text-1--dark);
+  background-color: var(--selective-yellow-3--adaptive);
+}
+
+kbd.celestial-blue {
+  color: var(--text-1--inverse);
+  background-color: var(--celestial-blue-3--adaptive);
+}
+
+kbd.mexican-pink {
+  color: var(--text-1--light);
+  background-color: var(--mexican-pink-3--adaptive);
+}
+
+kbd.chartreuse {
+  color: var(--text-1--dark);
+  background-color: var(--chartreuse-3--adaptive);
+}
