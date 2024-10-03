@@ -3,7 +3,7 @@ article p.first-graph::first-letter {
   padding: var(--size-3);
   margin: var(--size-2);
   border: var(--border-size-2) solid var(--accent-color);
-  border-radius: var(--size-1); /*8px*/
+  border-radius: var(--size-1);
 
   font-family: var(--font-serif-black);
   font-size: var(--font-size-6);
@@ -11,9 +11,12 @@ article p.first-graph::first-letter {
   float: left;
 }
 
+article p.first-graph.circle::first-letter {
+  border-radius: var(--size-7);
+}
+
 article p.first-graph.malachite::first-letter {
   color: var(--malachite);
-  /*border-color: var(--malachite-5--adaptive);*/
   border-color: var(--malachite-2--adaptive);
   box-shadow: 0 0 5px 2px var(--malachite-5);
 }
