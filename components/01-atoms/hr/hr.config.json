@@ -39,6 +39,30 @@
       }
     },
     {
+      "name": "surface-1",
+      "context": {
+        "modifier": "surface-1"
+      }
+    },
+    {
+      "name": "surface-2",
+      "context": {
+        "modifier": "surface-2"
+      }
+    },
+    {
+      "name": "surface-3",
+      "context": {
+        "modifier": "surface-3"
+      }
+    },
+    {
+      "name": "surface-4",
+      "context": {
+        "modifier": "surface-4"
+      }
+    },
+    {
       "name": "pattern-3",
       "context": {
         "modifier": "pattern-3"
