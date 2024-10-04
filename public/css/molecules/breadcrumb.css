@@ -40,6 +40,14 @@ nav.breadcrumb.no-caret ul {
   }
 }
 
+nav.breadcrumb.size-00 ul li {
+  font-size: var(--font-size-1);
+}
+
+nav.breadcrumb.size-0 ul li {
+  font-size: var(--font-size-2);
+}
+
 nav.breadcrumb.size-1 ul li {
   font-size: var(--font-size-4);
 }
