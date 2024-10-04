@@ -15,6 +15,42 @@ a.nav-button.square {
   border-radius: var(--size-2);
 }
 
+a.nav-button.size-00 {
+  width: var(--size-7);
+  height: var(--size-7);
+  font-size: var(--font-size-3);
+}
+
+a.nav-button.size-0 {
+  width: var(--size-8);
+  height: var(--size-8);
+  font-size: var(--font-size-4);
+}
+
+a.nav-button.size-1 {
+  width: var(--size-11);
+  height: var(--size-11);
+  font-size: var(--font-size-6);
+}
+
+a.nav-button.size-2 {
+  width: var(--size-12);
+  height: var(--size-12);
+  font-size: var(--font-size-7);
+}
+
+a.nav-button.size-3 {
+  width: var(--size-13);
+  height: var(--size-13);
+  font-size: var(--font-size-8);
+}
+
+a.nav-button.size-4 {
+  width: var(--size-14);
+  height: var(--size-14);
+  font-size: var(--font-size-8);
+}
+
 a.nav-button.default {
   border-color: var(--text-1);
 }
