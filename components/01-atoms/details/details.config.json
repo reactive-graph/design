@@ -1,0 +1,45 @@
+{
+  "title": "Details",
+  "status": "prototype",
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "modifier": ""
+      }
+    },
+    {
+      "name": "malachite",
+      "context": {
+        "modifier": "malachite"
+      }
+    },
+    {
+      "name": "selective-yellow",
+      "context": {
+        "modifier": "selective-yellow"
+      }
+    },
+    {
+      "name": "celestial-blue",
+      "context": {
+        "modifier": "celestial-blue"
+      }
+    },
+    {
+      "name": "mexican-pink",
+      "context": {
+        "modifier": "mexican-pink"
+      }
+    },
+    {
+      "name": "chartreuse",
+      "context": {
+        "modifier": "chartreuse"
+      }
+    }
+  ],
+  "context": {
+    "modifier": ""
+  }
+}
