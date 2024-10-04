@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 class="mexican-pink">
+    Details
+    <span class="token string" style="font-size: var(--font-size-2)">chartreuse</span>
+  </h1>
+  <hr>
+  <h3 class="celestial-blue">Regular</h3>
+  <div style="padding: var(--size-4);">
+    <details class="chartreuse">
+      <summary>The summary</summary>
+      <article>
+        <p class="first-graph">
+          Reporters hoping to evade other forms of surveillance by meeting in person with a source might want to rethink that practice. Every major newsroom
+          covered by the data contained dozens of pings; we easily traced one Washington Post journalist through Arlington, Va.
+        </p>
+        <p>
+          In other cases, there were detours to hotels and late-night visits to the homes of prominent people. One person, plucked from the data in Los Angeles
+          nearly at random, was found traveling to and from roadside motels multiple times, for visits of only a few hours each time.
+        </p>
+        <p class="first-graph">
+          While these pointillist pings don’t in themselves reveal a complete picture, a lot can be gleaned by examining the date, time and length of time at
+          each point.
+        </p>
+        <p>
+          Large data companies like Foursquare — perhaps the most familiar name in the location data business — say they don’t sell detailed location data like
+          the kind reviewed for this story but rather use it to inform analysis, such as measuring whether you entered a store after seeing an ad on your mobile
+          phone.
+        </p>
+      </article>
+    </details>
+  </div>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

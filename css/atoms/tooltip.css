@@ -61,6 +61,18 @@ span.tooltip.button {
   &:hover:after {
     color: var(--accent-color);;
   }
+
+  &.square:after {
+    content: "\fa41";
+  }
+
+  &.info:after {
+    content: "\f6d8";
+  }
+
+  &.square.info:after {
+    content: "\f6d9";
+  }
 }
 
 span.tooltip.malachite {
