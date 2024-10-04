@@ -1,0 +1,127 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  <div style="padding: var(--size-4);">
+  <h1 class="mexican-pink">
+    Breadcrumb
+    <span class="token string" style="font-size: var(--font-size-2)">celestial-blue</span>
+  </h1>
+  <hr>
+  <h3 class="celestial-blue">Simple Breadcrumb</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/instances">Instances</a></li>
+        <li><a href="#/instances/entities">Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1">631e8eac-b220-43b0-9874-7f14c6ca55a1</a></li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">No caret</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/instances">Instances</a></li>
+        <li><a href="#/instances/entities">Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1">631e8eac-b220-43b0-9874-7f14c6ca55a1</a></li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">Breadcrumb with Custom Icons</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/"><i class="ti ti-home mexican-pink"></i> Home</a></li>
+        <li><a href="#/instances"><i class="ti ti-hexagon-letter-i mexican-pink"></i> Instances</a></li>
+        <li><a href="#/instances/entities"><i class="ti ti-hexagon-letter-e mexican-pink"></i> Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1"><i class="ti ti-hexagon-number-6-filled mexican-pink"></i>
+          631e8eac-b220-43b0-9874-7f14c6ca55a1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">Size 1</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret size-1 celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/"><i class="ti ti-home mexican-pink"></i> Home</a></li>
+        <li><a href="#/instances"><i class="ti ti-hexagon-letter-i mexican-pink"></i> Instances</a></li>
+        <li><a href="#/instances/entities"><i class="ti ti-hexagon-letter-e mexican-pink"></i> Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1"><i class="ti ti-hexagon-number-6-filled mexican-pink"></i>
+          631e8eac-b220-43b0-9874-7f14c6ca55a1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">Size 2</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret size-2 celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/"><i class="ti ti-home mexican-pink"></i> Home</a></li>
+        <li><a href="#/instances"><i class="ti ti-hexagon-letter-i mexican-pink"></i> Instances</a></li>
+        <li><a href="#/instances/entities"><i class="ti ti-hexagon-letter-e mexican-pink"></i> Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1"><i class="ti ti-hexagon-number-6-filled mexican-pink"></i>
+          631e8eac-b220-43b0-9874-7f14c6ca55a1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">Size 3</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret size-3 celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/"><i class="ti ti-home mexican-pink"></i> Home</a></li>
+        <li><a href="#/instances"><i class="ti ti-hexagon-letter-i mexican-pink"></i> Instances</a></li>
+        <li><a href="#/instances/entities"><i class="ti ti-hexagon-letter-e mexican-pink"></i> Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1"><i class="ti ti-hexagon-number-6-filled mexican-pink"></i>
+          631e8eac-b220-43b0-9874-7f14c6ca55a1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <hr>
+  <h3 class="celestial-blue">Size 4</h3>
+  <div style="padding: var(--size-4);">
+    <nav class="breadcrumb no-caret size-4 celestial-blue" aria-label="breadcrumb">
+      <ul>
+        <li><a href="#/"><i class="ti ti-home mexican-pink"></i> Home</a></li>
+        <li><a href="#/instances"><i class="ti ti-hexagon-letter-i mexican-pink"></i> Instances</a></li>
+        <li><a href="#/instances/entities"><i class="ti ti-hexagon-letter-e mexican-pink"></i> Entities</a></li>
+        <li><a href="#/instances/entities/631e8eac-b220-43b0-9874-7f14c6ca55a1"><i class="ti ti-hexagon-number-6-filled mexican-pink"></i>
+          631e8eac-b220-43b0-9874-7f14c6ca55a1</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

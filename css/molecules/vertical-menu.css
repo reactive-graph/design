@@ -41,13 +41,15 @@ nav.vertical-menu.square ul li {
 }
 
 nav.vertical-menu.square.size-00 ul li {
-  padding: var(--size-1) var(--size-1);
+  padding: var(--size-1) var(--size-2);
   font-size: var(--font-size-1);
+  line-height: var(--font-lineheight-2);
 }
 
 nav.vertical-menu.square.size-0 ul li {
   padding: var(--size-1) var(--size-2);
   font-size: var(--font-size-2);
+  line-height: var(--font-lineheight-3);
 }
 
 nav.vertical-menu.square.size-1 ul li {
