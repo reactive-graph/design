@@ -33,11 +33,10 @@ nav.breadcrumb {
   }
 }
 
-nav.breadcrumb.no-caret {
-  ul {
-    li + li:before {
-      content: "";
-    }
+nav.breadcrumb.no-caret ul {
+  li + li:before {
+    padding: 0;
+    content: "";
   }
 }
 
