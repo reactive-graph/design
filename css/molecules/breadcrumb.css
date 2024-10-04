@@ -12,6 +12,7 @@ nav.breadcrumb {
       a {
         color: var(--link);
         text-decoration: none;
+        white-space: nowrap;
 
         i.ti {
           color: var(--mexican-pink);
@@ -32,11 +33,10 @@ nav.breadcrumb {
   }
 }
 
-nav.breadcrumb.no-caret {
-  ul {
-    li + li:before {
-      content: "";
-    }
+nav.breadcrumb.no-caret ul {
+  li + li:before {
+    padding: 0;
+    content: "";
   }
 }
 
@@ -56,76 +56,92 @@ nav.breadcrumb.size-4 ul li {
   font-size: var(--font-size-7);
 }
 
-nav.breadcrumb.malachite ul,
-nav.breadcrumb.selective-yellow ul,
-nav.breadcrumb.celestial-blue ul,
-nav.breadcrumb.mexican-pink ul,
-nav.breadcrumb.chartreuse ul {
-  li a i.ti {
-    color: var(--text-1);
+nav.breadcrumb.malachite ul li {
+  a {
+    color: var(--malachite);
+
+    i.ti {
+      color: var(--malachite-5--adaptive);
+    }
+
+    &:hover {
+      color: var(--malachite-5--adaptive);
+    }
   }
 
-  li:before {
-    color: var(--text-1);
-  }
-}
-
-nav.breadcrumb.malachite ul li a {
-  color: var(--malachite);
-
-  i.ti {
-    color: var(--malachite-5--adaptive);
-  }
-
-  &:hover {
+  &:before {
     color: var(--malachite-5--adaptive);
   }
 }
 
-nav.breadcrumb.selective-yellow ul li a {
-  color: var(--selective-yellow);
+nav.breadcrumb.selective-yellow ul li {
+  a {
+    color: var(--selective-yellow);
 
-  i.ti {
+    i.ti {
+      color: var(--selective-yellow-5--adaptive);
+    }
+
+    &:hover {
+      color: var(--selective-yellow-5--adaptive);
+    }
+  }
+
+  &:before {
     color: var(--selective-yellow-5--adaptive);
   }
-
-  &:hover {
-    color: var(--selective-yellow-5--adaptive);
-  }
 }
 
-nav.breadcrumb.celestial-blue ul li a {
-  color: var(--celestial-blue);
+nav.breadcrumb.celestial-blue ul li {
+  a {
+    color: var(--celestial-blue);
 
-  i.ti {
+    i.ti {
+      color: var(--celestial-blue-5--adaptive);
+    }
+
+    &:hover {
+      color: var(--celestial-blue-5--adaptive);
+    }
+  }
+
+  &:before {
     color: var(--celestial-blue-5--adaptive);
   }
+}
 
-  &:hover {
-    color: var(--celestial-blue-5--adaptive);
+nav.breadcrumb.mexican-pink ul li {
+  a {
+    color: var(--mexican-pink);
+
+    i.ti {
+      color: var(--mexican-pink-5--adaptive);
+    }
+
+    &:hover {
+      color: var(--mexican-pink-5--adaptive);
+    }
+  }
+
+  &:before {
+    color: var(--mexican-pink-5--adaptive);
   }
 }
 
-nav.breadcrumb.mexican-pink ul li a {
-  color: var(--mexican-pink);
+nav.breadcrumb.chartreuse ul li {
+  a {
+    color: var(--chartreuse);
 
-  i.ti {
-    color: var(--mexican-pink-5--adaptive);
+    i.ti {
+      color: var(--chartreuse-5--adaptive);
+    }
+
+    &:hover {
+      color: var(--chartreuse-5--adaptive);
+    }
   }
 
-  &:hover {
-    color: var(--mexican-pink-5--adaptive);
-  }
-}
-
-nav.breadcrumb.chartreuse ul li a {
-  color: var(--chartreuse);
-
-  i.ti {
-    color: var(--chartreuse-5--adaptive);
-  }
-
-  &:hover {
+  &:before {
     color: var(--chartreuse-5--adaptive);
   }
 }
