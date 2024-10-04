@@ -12,6 +12,7 @@ nav.breadcrumb {
       a {
         color: var(--link);
         text-decoration: none;
+        white-space: nowrap;
 
         i.ti {
           color: var(--mexican-pink);
