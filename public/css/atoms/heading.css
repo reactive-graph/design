@@ -1,3 +1,12 @@
+h1.full-width,
+h2.full-width,
+h3.full-width,
+h4.full-width,
+h5.full-width,
+h6.full-width {
+  max-inline-size: unset;
+}
+
 h1.malachite,
 h2.malachite,
 h3.malachite,
