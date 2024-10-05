@@ -1,0 +1,52 @@
+{
+  "title": "Slide",
+  "status": "prototype",
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "frame": false,
+        "modifier": ""
+      }
+    },
+    {
+      "name": "malachite",
+      "context": {
+        "frame": true,
+        "modifier": "malachite"
+      }
+    },
+    {
+      "name": "selective-yellow",
+      "context": {
+        "frame": true,
+        "modifier": "selective-yellow"
+      }
+    },
+    {
+      "name": "celestial-blue",
+      "context": {
+        "frame": true,
+        "modifier": "celestial-blue"
+      }
+    },
+    {
+      "name": "mexican-pink",
+      "context": {
+        "frame": true,
+        "modifier": "mexican-pink"
+      }
+    },
+    {
+      "name": "chartreuse",
+      "context": {
+        "frame": true,
+        "modifier": "chartreuse"
+      }
+    }
+  ],
+  "context": {
+    "frame": false,
+    "modifier": ""
+  }
+}
