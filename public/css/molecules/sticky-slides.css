@@ -2,6 +2,30 @@
   block-size: 100dvh;
   overflow-y: auto;
 
+  &.height-75 {
+    block-size: 75dvh;
+
+    & figure {
+      block-size: 75dvh;
+    }
+  }
+
+  &.height-50 {
+    block-size: 50dvh;
+
+    & figure {
+      block-size: 50dvh;
+    }
+  }
+
+  &.height-25 {
+    block-size: 25dvh;
+
+    & figure {
+      block-size: 25dvh;
+    }
+  }
+
   /* Hide scrollbar */
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
@@ -22,6 +46,87 @@
     /* Fix for Firefox sticky bug */
     @supports not (-moz-appearance: none) {
       position: sticky;
+    }
+
+    div.slide.text {
+      inline-size: 100%;
+      block-size: 100%;
+      margin-inline: auto;
+
+      &.overlay {
+        grid-template-areas: "overlay";
+
+        & picture {
+          grid-area: overlay;
+        }
+
+        > h1,
+        > h2,
+        > h3,
+        > h4,
+        > h5,
+        > h6 {
+          grid-area: overlay;
+          margin-inline: auto;
+          margin-block: auto;
+          max-inline-size: unset;
+          inline-size: 75%;
+          block-size: 75%;
+          padding-block: 25%;
+          text-align: center;
+        }
+
+        > article {
+          grid-area: overlay;
+          margin-inline: auto;
+          margin-block: auto;
+        }
+
+        &.surface-1 {
+          > h1,
+          > h2,
+          > h3,
+          > h4,
+          > h5,
+          > h6 {
+            background-color: var(--surface-1);
+          }
+
+          > article {
+            background-color: var(--surface-1);
+          }
+        }
+
+        &.surface-opaque-3 {
+          > h1,
+          > h2,
+          > h3,
+          > h4,
+          > h5,
+          > h6 {
+            background-color: var(--surface-opaque-3);
+          }
+
+          > article {
+            background-color: var(--surface-opaque-3);
+          }
+        }
+
+        &.surface-opaque-7 {
+          > h1,
+          > h2,
+          > h3,
+          > h4,
+          > h5,
+          > h6 {
+            background-color: var(--surface-opaque-7);
+          }
+
+          > article {
+            background-color: var(--surface-opaque-7);
+          }
+        }
+      }
     }
   }
 
