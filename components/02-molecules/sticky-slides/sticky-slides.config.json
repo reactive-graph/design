@@ -43,6 +43,13 @@
         "fixed": true,
         "modifier": "chartreuse"
       }
+    },
+    {
+      "name": "fixed",
+      "context": {
+        "fixed": true,
+        "modifier": ""
+      }
     }
   ],
   "context": {

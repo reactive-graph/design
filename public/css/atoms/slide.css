@@ -152,7 +152,8 @@
 
   }
 
-  & img {
+  & img,
+  & picture {
     object-fit: cover;
   }
 
