@@ -57,6 +57,18 @@
       block-size: 100%;
       margin-inline: auto;
 
+      > article {
+        max-block-size: 100%;
+      }
+
+      > picture {
+        object-position: center center;
+        object-fit: cover;
+        inline-size: 100%;
+        block-size: 100%;
+        overflow: hidden;
+      }
+
       &.overlay {
         grid-template-areas: "overlay";
 
@@ -136,16 +148,16 @@
     }
   }
 
-
   :is(picture, img) {
     inline-size: 100%;
     block-size: 100%;
   }
 
-  & img {
+  & img,
+  & picture {
     object-position: center center;
     object-fit: cover;
-    background: var(--gradient-6);
+    overflow: hidden;
   }
 
   & div.controls {
