@@ -1,0 +1,52 @@
+{
+  "title": "Sticky Slides",
+  "status": "prototype",
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+        "fixed": false,
+        "modifier": ""
+      }
+    },
+    {
+      "name": "malachite",
+      "context": {
+        "fixed": true,
+        "modifier": "malachite"
+      }
+    },
+    {
+      "name": "selective-yellow",
+      "context": {
+        "fixed": false,
+        "modifier": "selective-yellow"
+      }
+    },
+    {
+      "name": "celestial-blue",
+      "context": {
+        "fixed": true,
+        "modifier": "celestial-blue"
+      }
+    },
+    {
+      "name": "mexican-pink",
+      "context": {
+        "fixed": false,
+        "modifier": "mexican-pink"
+      }
+    },
+    {
+      "name": "chartreuse",
+      "context": {
+        "fixed": true,
+        "modifier": "chartreuse"
+      }
+    }
+  ],
+  "context": {
+    "fixed": false,
+    "modifier": ""
+  }
+}
