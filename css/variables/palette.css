@@ -81,6 +81,14 @@
   --chartreuse-6--adaptive: color-mix(in srgb, var(--chartreuse) 40%, var(--adaptive));
   --chartreuse-7--adaptive: color-mix(in srgb, var(--chartreuse) 30%, var(--adaptive));
 
+  --surface-opaque-1: color-mix(in srgb, var(--surface-1) 90%, transparent);
+  --surface-opaque-2: color-mix(in srgb, var(--surface-1) 80%, transparent);
+  --surface-opaque-3: color-mix(in srgb, var(--surface-1) 70%, transparent);
+  --surface-opaque-4: color-mix(in srgb, var(--surface-1) 60%, transparent);
+  --surface-opaque-5: color-mix(in srgb, var(--surface-1) 50%, transparent);
+  --surface-opaque-6: color-mix(in srgb, var(--surface-1) 40%, transparent);
+  --surface-opaque-7: color-mix(in srgb, var(--surface-1) 30%, transparent);
+
   --black: #000000ff;
   --white: #ffffffff;
 }
