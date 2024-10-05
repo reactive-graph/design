@@ -4,7 +4,7 @@ status: alpha
 ---
 
 <div>
-  <img src="{{ path '/logo/full/reactive-graph-full-mexican-pink.svg' }}" style="height: 240px; float: right;" alt="Reactive Graph">
+  <img src="{{ path '/logo/configurable/reactive-graph.svg' }}" style="height: 240px; float: right;" alt="Reactive Graph">
 </div>
 
 <article class="rg-article">
