@@ -92,6 +92,7 @@ details:has(pre.code-block.diff) {
   }
 }
 
+/* tabler-icons has no icon for java (yet) */
 details:has(pre.code-block.java) {
   summary {
     &:before {
@@ -190,6 +191,7 @@ details:has(pre.code-block.typescript) {
   }
 }
 
+/* tabler-icons has no icon for yaml (yet) */
 details:has(pre.code-block.yaml) {
   summary {
     &:before {
