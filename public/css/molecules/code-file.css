@@ -96,6 +96,24 @@ details:has(pre.code-block.hljs.language-diff) {
   }
 }
 
+details:has(pre.code-block.hljs.language-graphql) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f32c";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "GraphQL";
+    }
+  }
+
+  & pre.code-block.hljs.language-graphql:before {
+    content: "\f32c";
+  }
+}
+
 /* tabler-icons has no icon for java (yet) */
 details:has(pre.code-block.hljs.language-java) {
   summary {

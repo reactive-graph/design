@@ -6,6 +6,7 @@
   <nav class="horizontal-menu pills">
     <ul>
       <li><a href="#diff">Diff</a></li>
+      <li><a href="#graphql">GraphQL</a></li>
       <li><a href="#java">Java</a></li>
       <li><a href="#javascript">JavaScript</a></li>
       <li><a href="#json">JSON</a></li>
@@ -27,6 +28,18 @@
   </h3>
   <div style="padding: var(--size-4);">
     <pre class="code-block">{{> @example.diff }}</pre>
+  </div>
+  <hr>
+  <h3 id="graphql" class="celestial-blue full-width">
+    GraphQL
+    <span style="float: right;">
+      <a href="#code-blocks-top" class="nav-button celestial-blue size-00">
+        <i class="ti ti-chevron-up"></i>
+      </a>
+    </span>
+  </h3>
+  <div style="padding: var(--size-4);">
+    <pre class="code-block language-graphql">{{> @example.graphql }}</pre>
   </div>
   <hr>
   <h3 id="java" class="celestial-blue full-width">
@@ -98,7 +111,7 @@
     </span>
   </h3>
   <div style="padding: var(--size-4);">
-    <pre class="code-block">{{> @example.toml }}</pre>
+    <pre class="code-block language-toml">{{> @example.toml }}</pre>
   </div>
   <hr>
   <h3 id="typescript" class="celestial-blue full-width">
