@@ -15,21 +15,28 @@ updates:
   - package-ecosystem: "npm"
     directory: "/"
     schedule:
-      interval: "weekly"
-      day: "friday"
-      time: "18:00"
-      timezone: "Europe/Berlin"
-  - package-ecosystem: "npm"
-    directory: "/"
-    schedule:
       interval: "daily"
-      time: "18:00"
+      time: "18:18"
       timezone: "Europe/Berlin"
     open-pull-requests-limit: 10
     reviewers:
       - "reactive-graph/code-contributors"
     groups:
       npm:
+        update-types:
+          - "minor"
+          - "patch"
+  - package-ecosystem: "cargo"
+    directory: "/"
+    schedule:
+      interval: "daily"
+      time: "18:18"
+      timezone: "Europe/Berlin"
+    open-pull-requests-limit: 10
+    reviewers:
+      - "reactive-graph/code-contributors"
+    groups:
+      rust-dependencies:
         update-types:
           - "minor"
           - "patch"
