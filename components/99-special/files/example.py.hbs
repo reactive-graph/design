@@ -1,0 +1,16 @@
+def stack():
+    l = []
+
+    def pop():
+        if not is_empty():
+            return l.pop()
+
+    def push(element):
+        l.append(element)
+
+    def is_empty():
+        return len(l) == 0
+
+    return pop, push, is_empty
+
+pop, push, is_empty = stack()
