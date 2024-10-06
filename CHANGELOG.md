@@ -10,6 +10,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - IDE Added run configurations
+- Molecule `code-file`
+- Support for GraphQL in `code-block` and `code-file`
 
 ### Changed
 
