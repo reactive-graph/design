@@ -59,3 +59,14 @@ This repository contains the design system for the <a href="https://github.com/r
   <br>
   Graphical editor for creating and editing flows
 </p>
+
+<h2 align="center">Made with</h2>
+
+<center>
+
+* [Fractal](https://github.com/frctl/fractal)
+* [Open Props](https://open-props.style/)
+* [Highlight.js](https://highlightjs.org/)
+* [Mermaid](https://mermaid.js.org/)
+
+</center>
