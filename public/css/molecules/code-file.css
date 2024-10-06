@@ -90,6 +90,10 @@ details:has(pre.code-block.diff) {
       content: "DIFF";
     }
   }
+
+  & pre.code-block.diff:before {
+    content: "\ecf1";
+  }
 }
 
 /* tabler-icons has no icon for java (yet) */
@@ -105,6 +109,10 @@ details:has(pre.code-block.java) {
       content: "JAVA";
     }
   }
+
+  & pre.code-block.java:before {
+    content: "\ef0e";
+  }
 }
 
 details:has(pre.code-block.javascript) {
@@ -118,6 +126,10 @@ details:has(pre.code-block.javascript) {
     &:after {
       content: "JAVASCRIPT";
     }
+  }
+
+  & pre.code-block.javascript:before {
+    content: "\ef0c";
   }
 }
 
@@ -133,6 +145,10 @@ details:has(pre.code-block.json) {
       content: "JSON";
     }
   }
+
+  & pre.code-block.json:before {
+    content: "\f7b2";
+  }
 }
 
 details:has(pre.code-block.python) {
@@ -146,6 +162,10 @@ details:has(pre.code-block.python) {
     &:after {
       content: "PYTHON";
     }
+  }
+
+  & pre.code-block.python:before {
+    content: "\ed01";
   }
 }
 
@@ -161,6 +181,10 @@ details:has(pre.code-block.rust) {
       content: "RUST";
     }
   }
+
+  & pre.code-block.rust:before {
+    content: "\fa53";
+  }
 }
 
 details:has(pre.code-block.toml) {
@@ -174,6 +198,10 @@ details:has(pre.code-block.toml) {
     &:after {
       content: "TOML";
     }
+  }
+
+  & pre.code-block.toml:before {
+    content: "\fa5d";
   }
 }
 
@@ -189,6 +217,10 @@ details:has(pre.code-block.typescript) {
       content: "TYPESCRIPT";
     }
   }
+
+  & pre.code-block.typescript:before {
+    content: "\f5f1";
+  }
 }
 
 /* tabler-icons has no icon for yaml (yet) */
@@ -203,5 +235,9 @@ details:has(pre.code-block.yaml) {
     &:after {
       content: "YAML";
     }
+  }
+
+  & pre.code-block.yaml:before {
+    content: "\f47a";
   }
 }
