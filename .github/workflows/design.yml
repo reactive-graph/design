@@ -7,6 +7,8 @@ on:
       - "components/**/*"
       - "docs/**/*"
       - "public/**/*"
+      - "src/**/*.rs"
+      - "Cargo.toml"
       - ".github/workflows/design.yml"
   pull_request:
     branches: [ main ]
@@ -14,11 +16,21 @@ on:
       - "components/**/*"
       - "docs/**/*"
       - "public/**/*"
+      - "src/**/*.rs"
+      - "Cargo.toml"
       - ".github/workflows/design.yml"
 
 jobs:
+  rustfmt:
+    name: Verify code formatting
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions-rust-lang/setup-rust-toolchain@v1
+      - uses: actions-rust-lang/rustfmt@v1
   design:
     name: Design
+    needs: [ rustfmt ]
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
