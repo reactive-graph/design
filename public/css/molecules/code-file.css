@@ -6,7 +6,7 @@ details:has(pre.code-block) {
 
     &:after {
       float: right;
-      content: "CODE BLOCK";
+      content: "CODE";
     }
 
     &:has(i.ti-json) {
