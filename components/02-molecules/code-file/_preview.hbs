@@ -8,6 +8,7 @@
   <link rel="icon" type="image/png" href="{{ path '/favicon/favicon.png' }}">
   <link rel="stylesheet" href="{{ path '/css/reactive-graph.css' }}">
   <script src="{{ path '/js/highlight/highlight.min.js' }}"></script>
+  <script src="{{ path '/js/highlight/highlight-copy.min.js' }}"></script>
   <title>Preview</title>
   <link rel="preload" href="{{ path '/reactive-graph-design_bg.wasm' }}" crossorigin="anonymous" as="fetch" type="application/wasm">
   <link rel="modulepreload" href="{{ path '/reactive-graph-design.js' }}" crossorigin="anonymous">
@@ -19,6 +20,9 @@
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre.code-block').forEach((block) => {
+      hljs.addPlugin(new CopyButtonPlugin({
+        autohide: false, // Always show the copy button
+      }));
       hljs.highlightElement(block);
     });
   });
