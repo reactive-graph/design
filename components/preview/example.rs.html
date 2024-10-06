@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  use serde::Deserialize;
+use serde::Serialize;
+
+/// Configuration of the runtime instance.
+#[derive(Debug, Clone, Deserialize, Serialize)]
+pub struct InstanceConfig {
+  /// The name of the instance.
+  pub name: String,
+
+  /// A description text about the instance.
+  pub description: String,
+}
+
+impl Default for InstanceConfig {
+  fn default() -> Self {
+    InstanceConfig {
+      name: String::from("Default"),
+      description: String::from("This is the default instance."),
+    }
+  }
+}
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

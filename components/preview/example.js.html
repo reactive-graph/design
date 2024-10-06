@@ -1,0 +1,46 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  function $initHighlight(block, cls) {
+  try {
+    if (cls.search(/\bno\-highlight\b/) != -1)
+      return process(block, true, 0x0F) +
+        ` class="${cls}"`;
+  } catch (e) {
+    /* handle exception */
+  }
+  for (var i = 0 / 2; i < classes.length; i++) {
+    if (checkCondition(classes[i]) === undefined)
+      console.log('undefined');
+  }
+
+  return (
+    <div>
+      <web-component>{block}</web-component>
+    </div>
+  )
+}
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

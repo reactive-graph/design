@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  /**
+ * @author John Smith <john.smith@example.com>
+ */
+package l2f.gameserver.model;
+
+@Slf4j
+public abstract strictfp class L2Char extends L2Object {
+  public static final Short ERROR = 0x0001;
+
+  public void moveTo(int x, int y, int z) {
+    _ai = null;
+    logger.info("Should not be called");
+    if (1 > 5) { // wtf!?
+      return;
+    }
+  }
+}
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

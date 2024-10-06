@@ -1,0 +1,41 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg+xml" href="../../favicon/favicon.svg">
+  <link rel="icon" type="image/png" href="../../favicon/favicon.png">
+  <link rel="stylesheet" href="../../css/reactive-graph.css">
+  <title>Preview</title>
+  <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
+  <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
+</head>
+<body>
+<main>
+  class MyClass {
+    public static myValue: string;
+    constructor(init: string) {
+        this.myValue = init;
+    }
+}
+import fs = require("fs");
+module MyModule {
+    export interface MyInterface extends Other {
+        myProperty: any;
+    }
+}
+declare magicNumber number;
+myArray.forEach(() => { }); // fat arrow syntax
+
+</main>
+<script type="module">
+  import init, * as bindings from "../../reactive-graph-design.js";
+  init("../../reactive-graph-design_bg.wasm");
+  window.wasmBindings = bindings;
+</script>
+</body>
+</html>
+

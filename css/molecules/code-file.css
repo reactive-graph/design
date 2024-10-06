@@ -1,0 +1,261 @@
+details:has(pre.code-block) {
+  summary {
+    font-family: var(--font-code);
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+
+    &:after {
+      float: right;
+      content: "CODE";
+    }
+
+    &:has(i.ti-json) {
+      i.ti-json
+    }
+  }
+
+  pre.code-block.hljs {
+    max-height: var(--size-15);
+    border: 0;
+    box-shadow: unset;
+  }
+
+  & pre.code-block:before {
+    float: right;
+    margin-top: var(--size-9);
+    transform: translateY(-100%);
+    font-family: "tabler-icons";
+    font-size: var(--font-size-8);
+    color: var(--surface-opaque-3);
+  }
+
+  border: 1px solid var(--surface-3);
+  border-radius: var(--radius-2);
+
+  &.malachite {
+    border-color: var(--malachite-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--malachite-5);
+
+    & pre.code-block:before {
+      color: var(--malachite-2--adaptive);
+    }
+  }
+
+  &.selective-yellow {
+    border-color: var(--selective-yellow-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--selective-yellow-5);
+
+    & pre.code-block:before {
+      color: var(--selective-yellow-2--adaptive);
+    }
+  }
+
+  &.celestial-blue {
+    border-color: var(--celestial-blue-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--celestial-blue-5);
+
+    & pre.code-block:before {
+      color: var(--celestial-blue-2--adaptive);
+    }
+  }
+
+  &.mexican-pink {
+    border-color: var(--mexican-pink-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--mexican-pink-5);
+
+    & pre.code-block:before {
+      color: var(--mexican-pink-2--adaptive);
+    }
+  }
+
+  &.chartreuse {
+    border-color: var(--chartreuse-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--chartreuse-5);
+
+    & pre.code-block:before {
+      color: var(--chartreuse-2--adaptive);
+    }
+  }
+}
+
+details:has(pre.code-block.hljs.language-diff) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ecf1";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "DIFF";
+    }
+  }
+
+  & pre.code-block.hljs.language-diff:before {
+    content: "\ecf1";
+  }
+}
+
+details:has(pre.code-block.hljs.language-graphql) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f32c";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "GraphQL";
+    }
+  }
+
+  & pre.code-block.hljs.language-graphql:before {
+    content: "\f32c";
+  }
+}
+
+/* tabler-icons has no icon for java (yet) */
+details:has(pre.code-block.hljs.language-java) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ef0e";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JAVA";
+    }
+  }
+
+  & pre.code-block.hljs.language-java:before {
+    content: "\ef0e";
+  }
+}
+
+details:has(pre.code-block.hljs.language-javascript) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ef0c";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JAVASCRIPT";
+    }
+  }
+
+  & pre.code-block.hljs.language-javascript:before {
+    content: "\ef0c";
+  }
+}
+
+details:has(pre.code-block.hljs.language-json) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f7b2";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JSON";
+    }
+  }
+
+  & pre.code-block.hljs.language-json:before {
+    content: "\f7b2";
+  }
+}
+
+details:has(pre.code-block.hljs.language-python) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ed01";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "PYTHON";
+    }
+  }
+
+  & pre.code-block.hljs.language-python:before {
+    content: "\ed01";
+  }
+}
+
+details:has(pre.code-block.hljs.language-rust) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\fa53";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "RUST";
+    }
+  }
+
+  & pre.code-block.hljs.language-rust:before {
+    content: "\fa53";
+  }
+}
+
+details:has(pre.code-block.hljs.language-toml) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\fa5d";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "TOML";
+    }
+  }
+
+  & pre.code-block.hljs.language-toml:before {
+    content: "\fa5d";
+  }
+}
+
+details:has(pre.code-block.hljs.language-typescript) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f5f1";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "TYPESCRIPT";
+    }
+  }
+
+  & pre.code-block.hljs.language-typescript:before {
+    content: "\f5f1";
+  }
+}
+
+/* tabler-icons has no icon for yaml (yet) */
+details:has(pre.code-block.hljs.language-yaml) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f47a";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "YAML";
+    }
+  }
+
+  & pre.code-block.hljs.language-yaml:before {
+    content: "\f47a";
+  }
+}
