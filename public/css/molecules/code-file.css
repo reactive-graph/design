@@ -1,0 +1,176 @@
+details:has(pre.code-block) {
+  summary {
+    font-family: var(--font-code);
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+
+    &:after {
+      float: right;
+      content: "CODE BLOCK";
+    }
+
+    &:has(i.ti-json) {
+      i.ti-json
+    }
+  }
+
+  pre.code-block.hljs {
+    max-height: var(--size-15);
+    border: 0;
+    box-shadow: unset;
+  }
+
+  border: 1px solid var(--surface-3);
+  border-radius: var(--radius-2);
+
+  &.malachite {
+    border-color: var(--malachite-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--malachite-5);
+  }
+
+  &.selective-yellow {
+    border-color: var(--selective-yellow-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--selective-yellow-5);
+  }
+
+  &.celestial-blue {
+    border-color: var(--celestial-blue-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--celestial-blue-5);
+  }
+
+  &.mexican-pink {
+    border-color: var(--mexican-pink-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--mexican-pink-5);
+  }
+
+  &.chartreuse {
+    border-color: var(--chartreuse-2--adaptive);
+    box-shadow: 0 0 5px 2px var(--chartreuse-5);
+  }
+}
+
+details:has(pre.code-block.diff) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ecf1";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "DIFF";
+    }
+  }
+}
+
+details:has(pre.code-block.java) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ef0e";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JAVA";
+    }
+  }
+}
+
+details:has(pre.code-block.javascript) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ef0c";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JAVASCRIPT";
+    }
+  }
+}
+
+details:has(pre.code-block.json) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f7b2";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "JSON";
+    }
+  }
+}
+
+details:has(pre.code-block.python) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\ed01";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "PYTHON";
+    }
+  }
+}
+
+details:has(pre.code-block.rust) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\fa53";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "RUST";
+    }
+  }
+}
+
+details:has(pre.code-block.toml) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\fa5d";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "TOML";
+    }
+  }
+}
+
+details:has(pre.code-block.typescript) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f5f1";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "TYPESCRIPT";
+    }
+  }
+}
+
+details:has(pre.code-block.yaml) {
+  summary {
+    &:before {
+      font-family: "tabler-icons";
+      content: "\f47a";
+      padding-inline-end: var(--size-2);
+    }
+
+    &:after {
+      content: "YAML";
+    }
+  }
+}
