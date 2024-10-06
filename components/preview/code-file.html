@@ -10,6 +10,7 @@
   <link rel="icon" type="image/png" href="../../favicon/favicon.png">
   <link rel="stylesheet" href="../../css/reactive-graph.css">
   <script src="../../js/highlight/highlight.min.js"></script>
+  <script src="../../js/highlight/highlight-copy.min.js"></script>
   <title>Preview</title>
   <link rel="preload" href="../../reactive-graph-design_bg.wasm" crossorigin="anonymous" as="fetch" type="application/wasm">
   <link rel="modulepreload" href="../../reactive-graph-design.js" crossorigin="anonymous">
@@ -2074,6 +2075,9 @@ Related Projects:
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     document.querySelectorAll('pre.code-block').forEach((block) => {
+      hljs.addPlugin(new CopyButtonPlugin({
+        autohide: false, // Always show the copy button
+      }));
       hljs.highlightElement(block);
     });
   });
