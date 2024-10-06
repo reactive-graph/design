@@ -134,20 +134,10 @@ organization Inexor (which is also an entity instance), we would use the colors 
 <h3 id="instance-system-colors-vs-type-system-colors">Instance System Colors vs. Type System Colors</h3>
 <p>The colors don’t infer with the colors of the type system. It’s possible to use all of these colors:</p>
 <div style="display: grid; grid-template-columns: auto auto auto 1fr;">
-  <code class="tag string">
-    <code class="tag rg-entity-type">User</code>
-    <br>
-    <code class="tag rg-entity-instance">Hanack</code>  
-  </code>
-  <code class="tag string">
-    <code class="tag rg-relation-type">---belongs to--&gt;</code>
-    <br>
-    <code class="tag rg-relation-instance">---belongs to--&gt;</code>
-  </code>
-  <code class="tag string">
-    <code class="tag rg-entity-type">Organization</code>
-    <br>
-    <code class="tag rg-entity-instance">Inexor</code>
+  <code style="color: var(--text-1); font-size: var(--font-size-5);">
+    <span class="tag rg-entity-type">User</span>---<span class="tag rg-relation-type">belongs to</span>--&gt;<span class="tag rg-entity-type">Organization</span>
+<br>
+    <span class="tag rg-entity-instance">Hanack</span>---<span class="tag rg-relation-instance">belongs to</span>--&gt;<span class="tag rg-entity-instance">Inexor</span>
   </code>
 </div>
 
@@ -950,6 +940,40 @@ organization Inexor (which is also an entity instance), we would use the colors 
                 data-handle="details"
             >
                 <span>Details</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #dc0073;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a
+                class="Tree-entityLink"
+                href="../../components/detail/diagram.html"
+                data-role="tree-link"
+                
+                data-pjax
+                data-test="diagram"
+                data-handle="diagram"
+            >
+                <span>Diagram</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -3260,6 +3284,8 @@ organization Inexor (which is also an entity instance), we would use the colors 
 </div>
 
             </div>
+        
+    
         
     
         
