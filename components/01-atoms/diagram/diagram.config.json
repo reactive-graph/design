@@ -1,0 +1,13 @@
+{
+  "title": "Diagram",
+  "status": "prototype",
+  "variants": [
+    {
+      "name": "default",
+      "context": {
+      }
+    }
+  ],
+  "context": {
+  }
+}
