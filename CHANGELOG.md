@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for copying code blocks
 - Atom `graphql-playground`
 - Atom `graphiql`
+- Atom `graphql-voyager`
 
 ### Changed
 
