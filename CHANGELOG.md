@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Support for GraphQL in `code-block` and `code-file`
 - Support for copying code blocks
 - Atom `graphql-playground`
+- Atom `graphiql`
 
 ### Changed
 
