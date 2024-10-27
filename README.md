@@ -60,6 +60,33 @@ This repository contains the design system for the <a href="https://github.com/r
   Graphical editor for creating and editing flows
 </p>
 
+<h2 align="center">Develop</h2>
+
+```
+pnpm install
+pnpm run dev
+```
+
+<h2 align="center">Build Design System Website</h2>
+
+```
+pnpm install
+trunk build
+cp webcomponents/reactive-graph-design-*_bg.wasm public/reactive-graph-design_bg.wasm
+cp webcomponents/reactive-graph-design-*.js public/reactive-graph-design.js
+pnpm run fractal:build
+```
+
+<h2 align="center">Build Design System Library</h2>
+
+```
+pnpm install
+trunk build
+cp webcomponents/reactive-graph-design-*_bg.wasm public/reactive-graph-design_bg.wasm
+cp webcomponents/reactive-graph-design-*.js public/reactive-graph-design.js
+pnpm run fractal:build-library
+```
+
 <h2 align="center">Made with</h2>
 
 <center>
