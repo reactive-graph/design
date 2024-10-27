@@ -20,6 +20,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - CI Check for changelog
+- Atom `blockquote` can have full width
+- Atom `blockquote` background pattern is optional
+- GraphQL Voyager can load a schema from a URL
 
 ## [0.1.6] - 2024-09-08
 
