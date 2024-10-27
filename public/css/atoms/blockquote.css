@@ -7,6 +7,16 @@ blockquote {
   & cite {
     rotate: -1deg;
   }
+
+  &.background-pattern {
+    background-image: var(--pattern-1--mexican-pink);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  blockquote.background-pattern {
+    background-image: var(--pattern-1--celestial-blue);
+  }
 }
 
 blockquote.full-width {
@@ -30,7 +40,9 @@ blockquote.malachite {
     color: var(--malachite-3--adaptive);
   }
 
-  background-image: var(--pattern-1--malachite);
+  &.background-pattern {
+    background-image: var(--pattern-1--malachite);
+  }
 }
 
 blockquote.selective-yellow {
@@ -41,7 +53,9 @@ blockquote.selective-yellow {
     color: var(--selective-yellow-3--adaptive);
   }
 
-  background-image: var(--pattern-1--selective-yellow);
+  &.background-pattern {
+    background-image: var(--pattern-1--selective-yellow);
+  }
 }
 
 blockquote.celestial-blue {
@@ -52,7 +66,9 @@ blockquote.celestial-blue {
     color: var(--celestial-blue-3--adaptive);
   }
 
-  background-image: var(--pattern-1--celestial-blue);
+  &.background-pattern {
+    background-image: var(--pattern-1--celestial-blue);
+  }
 }
 
 blockquote.mexican-pink {
@@ -63,7 +79,9 @@ blockquote.mexican-pink {
     color: var(--mexican-pink-3--adaptive);
   }
 
-  background-image: var(--pattern-1--mexican-pink);
+  &.background-pattern {
+    background-image: var(--pattern-1--mexican-pink);
+  }
 }
 
 blockquote.chartreuse {
@@ -74,5 +92,7 @@ blockquote.chartreuse {
     color: var(--chartreuse-3--adaptive);
   }
 
-  background-image: var(--pattern-1--chartreuse);
+  &.background-pattern {
+    background-image: var(--pattern-1--chartreuse);
+  }
 }
