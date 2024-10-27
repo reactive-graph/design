@@ -3,6 +3,7 @@ blockquote {
   border-color: var(--brand);
   background-color: var(--surface-2);
   justify-self: flex-start;
+  margin-bottom: var(--size-3);
 
   & cite {
     rotate: -1deg;
